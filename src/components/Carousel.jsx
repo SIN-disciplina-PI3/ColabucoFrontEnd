@@ -29,7 +29,7 @@ function Carousel() {
   ];
 
   return (
-    <Box position={'relative'} height={'400px'} width={'full'} overflow={'hidden'}>
+    <Box position={'relative'} height={'450px'} width={'full'} overflow={'hidden'}>
       <link
         rel="stylesheet"
         type="text/css"
@@ -68,11 +68,12 @@ function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'600px'} // Alterado de '6xl' para '600px'
+            height={'450px'}
             position="relative"
+            bg='rgba(0, 0, 0, 0.5)'
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="contain"
             backgroundImage={`url(${url})`}
           />
         ))}

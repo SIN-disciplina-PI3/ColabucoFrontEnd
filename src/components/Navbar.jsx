@@ -35,11 +35,11 @@ function Navbar(){
                 </HStack>
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
-                <Link href="" className='montsserrat categoria selecionado'>ARTES VISUAIS</Link>
-                <Link href="" className='montsserrat categoria'>MÚSICA</Link>
-                <Link href="" className='montsserrat categoria'>LITERATURA</Link>
-                <Link href="" className='montsserrat categoria'>CINEMA</Link>
-                <Link href="" className='montsserrat categoria'>ARTESANATO</Link>
+                <Link href="" className='montserrat categoria selecionado'>ARTES VISUAIS</Link>
+                <Link href="" className='montserrat categoria'>MÚSICA</Link>
+                <Link href="" className='montserrat categoria'>LITERATURA</Link>
+                <Link href="" className='montserrat categoria'>CINEMA</Link>
+                <Link href="" className='montserrat categoria'>ARTESANATO</Link>
             </HStack>
         </Box>
     );
