@@ -1,0 +1,12 @@
+.montsserrat{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.categoria{
+    padding: 15px 11px;
+}
+
+.selecionado{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom: solid 3px black;
+}
