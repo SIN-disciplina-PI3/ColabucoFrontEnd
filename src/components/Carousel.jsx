@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Image } from '@chakra-ui/react';
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import rightArrow from '../assets/right-arrow.svg';
+import leftArrow from '../assets/left-arrow.svg';
 import Slider from 'react-slick';
 import banner1 from '../assets/banner1.jpg';
-import { Image } from '@chakra-ui/react';
 
 const settings = {
   dots: true,
@@ -52,7 +52,7 @@ function Carousel() {
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
-        <Image src={rightArrow} transform='rotateY(3.142rad)'/>
+        <Image src={leftArrow}/>
       </IconButton>
       
       <IconButton
