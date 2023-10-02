@@ -1,0 +1,28 @@
+.App {
+    text-align: center;
+}
+
+.montserrat500{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+}
+
+.montserrat600{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+.categoria{
+    padding: 15px 11px;
+}
+
+.selecionado{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom: solid 3px black;
+}
+
+.centralize{
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}

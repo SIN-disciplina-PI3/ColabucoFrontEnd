@@ -1,27 +1,9 @@
-/*import {
-    Box,
-    Flex,
-    Avatar,
-    HStack,
-    Text,
-    IconButton,
-    Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
-    useColorModeValue,
-    Stack,
-} from '@chakra-ui/react';*/
-
-import { Box, Image, Link, Flex, Center, Input, Button, Spacer, HStack } from '@chakra-ui/react';
+import { Box, Image, Link, Input, HStack } from '@chakra-ui/react';
 
 import logo from '../assets/logo.png';
 import user from '../assets/user.png';
 import bag from '../assets/bag.png';
-import '../styles/navbar-style.css';
+import '../styles/home.css';
 
 function Navbar(){
     return(
@@ -35,11 +17,11 @@ function Navbar(){
                 </HStack>
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
-                <Link href="" className='montserrat categoria selecionado'>ARTES VISUAIS</Link>
-                <Link href="" className='montserrat categoria'>MÚSICA</Link>
-                <Link href="" className='montserrat categoria'>LITERATURA</Link>
-                <Link href="" className='montserrat categoria'>CINEMA</Link>
-                <Link href="" className='montserrat categoria'>ARTESANATO</Link>
+                <Link href="" className='montserrat600 categoria selecionado'>ARTES VISUAIS</Link>
+                <Link href="" className='montserrat600 categoria'>MÚSICA</Link>
+                <Link href="" className='montserrat600 categoria'>LITERATURA</Link>
+                <Link href="" className='montserrat600 categoria'>CINEMA</Link>
+                <Link href="" className='montserrat600 categoria'>ARTESANATO</Link>
             </HStack>
         </Box>
     );

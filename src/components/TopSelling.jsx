@@ -1,12 +1,12 @@
-import { Center, Box } from '@chakra-ui/react';
+import { Center, Box, Text } from '@chakra-ui/react';
 import CardProduct from './CardProduct';
-import '../styles/home.css'
+import '../styles/home.css';
 import SectionTitle from './SectionTitle';
 
-function Offers(props){
+function TopSelling(){
     return(
         <Box my={12}>
-            <SectionTitle title='Ofertas'/>
+            <SectionTitle title='Produtos mais vendidos'/>
             <Center>
                 <CardProduct/>
                 <CardProduct/>
@@ -18,4 +18,4 @@ function Offers(props){
     );
 }
 
-export default Offers;
+export default TopSelling;
