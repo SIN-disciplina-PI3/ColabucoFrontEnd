@@ -8,7 +8,7 @@ public class Pedidos {
     private ArrayList<Pedidos> pedidos;
 
     public ArrayList<Pedidos> listarPedidos(){
-        pedidos;
+       return pedidos;
     }
     public int getIdPedido() {
         return idPedido;
