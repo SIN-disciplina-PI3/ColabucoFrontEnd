@@ -1,12 +1,14 @@
+import java.util.ArrayList;
+
 public class Produto {
     private String id;
     private String nome;
-    private String categoria;
+    private ArrayList<String> categoria;
     private String descricao;
     private double preco;
     private Artista artista;
 
-    public Produto(String id, String nome, String categoria, String descricao, double preco){
+    public Produto(String id, String nome, ArrayList<String> categoria, String descricao, double preco, Artista artista){
         this.id = id;
         this.nome = nome;
         this.categoria = categoria;
@@ -18,7 +20,6 @@ public class Produto {
     public String getId() {
         return id;
     }
-
     public String getNome() {
         return nome;
     }
@@ -27,11 +28,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getCategoria() {
+    public ArrayList<String> getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(ArrayList<String> categoria) {
         this.categoria = categoria;
     }
 

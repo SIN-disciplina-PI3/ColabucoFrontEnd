@@ -9,19 +9,16 @@ public class Pagamento {
         this.idTransacao = idTransacao;
     }
 
+    //ainda vamos estudar como integrar com a API do PagSeguro
 
+    //getters
     public String getId() {
         return id;
     }
-
     public String getFormaPagamento() {
         return formaPagamento;
     }
-
-
     public int getIdTransacao() {
         return idTransacao;
     }
-
-
 }

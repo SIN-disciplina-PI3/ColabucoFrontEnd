@@ -4,7 +4,7 @@ public class Cliente {
     protected String cpf, nome, email, telefone, endereco, senha;
     protected CarrinhoDeCompras carrinho;
     protected ArrayList<Cartao> cartoes;
-    protected ArrayLis<Pedido> pedidos;
+    protected ArrayList<Pedido> pedidos;
 
     //construtor
     public Cliente(String nome, String email, String cpf, String telefone, String senha, String endereco) {
