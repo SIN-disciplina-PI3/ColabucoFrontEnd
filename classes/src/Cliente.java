@@ -44,7 +44,7 @@ public class Cliente {
     public ArrayList<Cartao> getCartoes() {
         return cartoes;
     }
-    public ArrayList<Produto> getPedidos(){
+    public ArrayList<Pedido> getPedidos(){
         return pedidos;
     }
 
