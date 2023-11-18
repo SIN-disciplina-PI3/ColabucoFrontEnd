@@ -1,4 +1,4 @@
-import { Text, Button, Heading, Input, InputGroup, Image, InputRightElement, Stack, CheckboxIcon } from '@chakra-ui/react';
+import { Text, Button, Input, InputGroup, InputRightElement, Stack } from '@chakra-ui/react';
 import styles from '../styles/login.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -41,10 +41,10 @@ function Login() {
             </InputGroup>
 
             <Text className='fonte01' >Não possui conta?
-                <Link className= 'texto03'> Cadastre-se </Link>
+                <Link className='texto03' to='/cadastrocliente'> Cadastre-se </Link>
             </Text>
 
-            <Button className=''>Entrar</Button>
+            <Button className='fonte02'> Entrar </Button>
         </Stack>
     );
 
