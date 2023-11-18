@@ -20,14 +20,14 @@ function VisualArtsCategory() {
       <Box w='100%' px='12%'>
         <Offers />
         <Center>
-          <FeaturedArtists/>
-          <FeaturedArtists/>
+          <FeaturedArtists />
+          <FeaturedArtists />
         </Center>
-        <TopSelling/>
-        <Categories/>
-        <BuyByArtist/>
+        <TopSelling />
+        <Categories />
+        <BuyByArtist />
       </Box>
-      
+
       <Footer />
     </Box>
   );

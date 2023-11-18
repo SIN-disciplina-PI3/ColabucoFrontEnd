@@ -7,9 +7,9 @@
     font-weight: 500;
 }
 
-.montserrat600{
+.fonte2{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .categoria{
@@ -17,6 +17,9 @@
 }
 
 .selecionado{
+    text-decoration:line-through;
+}
+.categoria:hover{
     background-color: rgba(0, 0, 0, 0.05);
     border-bottom: solid 3px black;
 }

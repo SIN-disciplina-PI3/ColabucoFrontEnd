@@ -5,6 +5,7 @@ import MusicCategory from './pages/MusicCategory';
 import LiteratureCategory from './pages/LiteratureCaterory';
 import CraftmanshipCategory from './pages/CraftsmanshipCategory';
 import CinemaCategory from './pages/CinemaCategory';
+import Login from './pages/Login';
 
 function AppRoutes(){
     return(
@@ -15,6 +16,8 @@ function AppRoutes(){
             <Route path="literature" element={<LiteratureCategory />} />
             <Route path="craftmanship" element={<CraftmanshipCategory />} />
             <Route path="cinema" element={<CinemaCategory />} />
+            <Route path="login" element= {<Login />} />
+            
         </Routes>
     );
 }

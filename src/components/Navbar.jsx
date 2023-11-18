@@ -5,26 +5,44 @@ import user from '../assets/user.png';
 import bag from '../assets/bag.png';
 import '../styles/home.css';
 
-function Navbar(){
-    return(
+function Navbar() {
+    return (
         <Box>
-            <HStack borderBottom='solid 3px black' p='10px 100px' spacing='8%'>
-                <Image src={logo} alt='Logo Colabuco'/>
-                <Input placeholder='O que você procura?' w='60%' border='solid 3px black' borderRadius='8px'/>
+            <HStack borderBottom='solid 3px black'
+                p='10px 100px'
+                spacing='8%'>
+                <Image src={logo} alt='Logo Colabuco' />
+                <Input placeholder='O que você procura?'
+                    w='60%'
+                    border='solid 3px black'
+                    borderRadius='8px'
+                />
                 <HStack align='center' spacing='15%'>
-                    <Link><Image src={user} alt='Ícone perfil'/></Link>
-                    <Link><Image src={bag} alt='Ícone bolsa de compras'/></Link>
+
+                    <Link href="/login">
+                        <Image src={user} alt='Ícone perfil' />
+                    </Link>
+
+                    <Link>
+                        <Image href="/carrinho" src={bag} alt='Ícone bolsa de compras' />
+                    </Link>
                 </HStack>
+
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
-                <Link href="" className='montserrat600 categoria selecionado'>ARTES VISUAIS</Link>
-                <Link href="" className='montserrat600 categoria'>MÚSICA</Link>
-                <Link href="" className='montserrat600 categoria'>LITERATURA</Link>
-                <Link href="" className='montserrat600 categoria'>CINEMA</Link>
-                <Link href="" className='montserrat600 categoria'>ARTESANATO</Link>
+                <Link
+                style={{ textDecoration: 'none' }} href=""
+                className='fonte2 categoria'>
+                    ARTES VISUAIS
+                </Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>MÚSICA</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>LITERATURA</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>CINEMA</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTESANATO</Link>
             </HStack>
         </Box>
     );
 }
 
 export default Navbar;
+
