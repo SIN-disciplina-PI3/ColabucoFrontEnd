@@ -1,9 +1,16 @@
+.texto05 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: xx-large;
+    
+    font-weight: bolder;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 45.5%;
+    background-color: #6600CC;
+    color: aliceblue;
+    
+}
 
-.texto05{
-font-family: 'Montserrat Alternates', sans-serif;
-font: weight 700;
- align-items: center;
- padding-left: 50%;
- background-color: #6600CC;
- 
+.formulario {
+   
 }
