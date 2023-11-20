@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from './/..//components/Navbar'
-import { Stack, Text, Button, Input, FormControl, FormLabel } from "@chakra-ui/react";
+import { Stack, Text, Button, Input, FormControl, FormLabel, Checkbox } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import styles from './../styles/cadastrocliente.css'
 
@@ -13,32 +13,45 @@ function CadastroCliente() {
         <Stack>
             <NavBar />
 
-            <Text mt='-8px' borderWidth='2.4px'  borderTopColor='black' borderBottomColor='black' borderLeftColor='#6600CC'
-            borderRightColor='#6600CC'  
-            className="texto05" height='150' > CADASTRE-SE </Text>
+            <Text
+                className="texto05">
+                CADASTRE-SE!
+                <br></br>
+                Conheça novos artistas e compre artes incríveis!
 
-            <FormControl isRequired pl='30%' >
-
-
-                <FormLabel className='formulario'  >Nome</FormLabel>
-                <Input width='50%' placeholder='Nome' />
+            </Text>
 
 
 
-                <FormLabel className='formulario'  >Nome</FormLabel>
-                <Input width='50%' placeholder='Nome' />
+            <FormControl isRequired className="formulario" >
+
+
+                <FormLabel >Nome</FormLabel>
+                <Input width='60%' placeholder='Nome' />
 
 
 
-                <FormLabel className='formulario'  >Nome</FormLabel>
-                <Input width='50%' placeholder='Nome' />
+                <FormLabel pt='1%' >Sobrenome</FormLabel>
+                <Input width='60%' placeholder='Sobrenome' />
 
 
 
-                <FormLabel className='formulario'  >Nome</FormLabel>
-                <Input width='50%' placeholder='Nome' />
+                <FormLabel pt='1%' > Email </FormLabel>
+                <Input width='60%' type="email" placeholder='Email' />
+
+
+
+                <FormLabel pt='1%'>Senha </FormLabel>
+                <Input width='60%' type="password" placeholder='Senha' />
+
+                <FormLabel pt='1%'>Confirmar Senha </FormLabel>
+                <Input width='60%' type="password" placeholder='Senha' /> <br></br>
+
+                <Checkbox pl='10%' pt='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
+                <br></br>
+                <br></br>
             </FormControl>
-
+            <Button marginLeft='47%' width='10%' marginBottom='3%' > Criar conta </Button>
         </Stack>
     );
 }

@@ -1,16 +1,24 @@
 .texto05 {
     font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
     font-size: xx-large;
-    
     font-weight: bolder;
     align-items: center;
-    padding-top: 2%;
-    padding-left: 45.5%;
+    padding-top: 1.5%;
+    padding-left: 30.5%;
     background-color: #6600CC;
     color: aliceblue;
-    
+    margin-top: -8px;
+    border-Width: 2.4px;
+     border-top-color: black;
+     border-bottom-color: black; 
+     border-left-color: #6600CC;
+    border-right-color: #6600CC;
+    height: 150px;
 }
 
-.formulario {
-   
+.formulario{
+    padding-top: 0.5%;
+   padding-left: 30%;
+
 }
