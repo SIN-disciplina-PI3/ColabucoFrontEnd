@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from './/..//components/Navbar'
-import { Stack, Text, Button, Input, FormControl, FormLabel, Checkbox } from "@chakra-ui/react";
+import { Stack, Text, Button, Input, FormControl, FormLabel, Checkbox,Box } from "@chakra-ui/react";
 
 import styles from './../styles/cadastrocliente.css'
 
@@ -12,17 +12,15 @@ function CadastroCliente() {
 
         <Stack>
             <NavBar />
-
-            <Text
-                className="texto05">
-                CADASTRE-SE!
-                <br></br>
-                Conheça novos artistas e compre artes incríveis!
-
-            </Text>
-
-
-
+            <Box className="texto05">
+                <Text pl='22%'>
+                    CADASTRE-SE
+                </Text>
+                <Text>
+                    Conheça novos artistas e compre artes incríveis!
+                </Text>
+            </Box>
+    
             <FormControl isRequired className="formulario" >
 
 
@@ -47,7 +45,7 @@ function CadastroCliente() {
                 <FormLabel pt='1%'>Confirmar Senha </FormLabel>
                 <Input width='60%' type="password" placeholder='Senha' /> <br></br>
 
-                <Checkbox pl='10%' pt='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
+                <Checkbox pl='8%' pt='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
                 <br></br>
                 <br></br>
             </FormControl>
