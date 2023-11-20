@@ -1,4 +1,4 @@
-import { Center, Box, Text } from '@chakra-ui/react';
+import { Center, Box } from '@chakra-ui/react';
 import CardProduct from './CardProduct';
 import '../styles/home.css';
 import SectionTitle from './SectionTitle';

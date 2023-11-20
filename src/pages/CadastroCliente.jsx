@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from './/..//components/Navbar'
 import { Stack, Text, Button, Input, FormControl, FormLabel, Checkbox } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+
 import styles from './../styles/cadastrocliente.css'
 
 
@@ -51,7 +51,7 @@ function CadastroCliente() {
                 <br></br>
                 <br></br>
             </FormControl>
-            <Button marginLeft='42%' width='20%' marginBottom='3%' backgroundColor='#F0F000' > Criar conta </Button>
+            <Button marginLeft='42%' width='20%' marginBottom='3%' backgroundColor='#F0F000' _hover='none' > Criar conta </Button>
         </Stack>
     );
 }

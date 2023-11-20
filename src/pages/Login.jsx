@@ -31,6 +31,10 @@ function Login() {
                 />
                 <InputRightElement pr='0.4' marginRight='2' >
                     <Button
+                    _hover='none'
+                    transitionDelay='0.3s'
+                        color='white'
+                        backgroundColor='#6600CC'
                         h='1.80rem'
                         size='xs'
                         onClick={handleClick}>
@@ -44,7 +48,7 @@ function Login() {
                 <Link className='texto03' to='/cadastrocliente'> Cadastre-se </Link>
             </Text>
 
-            <Button className='fonte02'> Entrar </Button>
+            <Button className='fonte02' _hover='none' backgroundColor='#6600CC' color='white'> Entrar </Button>
         </Stack>
     );
 

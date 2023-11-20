@@ -14,27 +14,22 @@
     font-style: italic;
 }
 
-
-.input:hover {
-  color: blueviolet;
-    
-}
-
 .navBar {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     font-style: italic;
-    padding: 9px;
+
+    padding-top: 12px;
     text-align: center;
     align-self: stretch;
-    height: 40px;
-    background-color: rgb(242, 255, 0);
+    height: 50px;
+    background-color: #f2ff00;
     border-bottom-width: 3px;
     border-bottom-color: black;
 }
 
 .texto{
-    padding-top: 7%;
+    padding-top: 6%;
     align-self: self-start;
     padding-left: 35.5%;
 }
