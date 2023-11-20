@@ -5,7 +5,8 @@ import ArtistRegister from "./components/ArtistRegister.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      {/* <AppRoutes /> */}
+      <ArtistRegister />
     </BrowserRouter>
   );
 }

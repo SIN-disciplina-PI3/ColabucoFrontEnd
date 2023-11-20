@@ -11,9 +11,19 @@ import {
   Textarea,
   Checkbox,
   Button,
+  InputGroup,
+  InputRightElement,
 } from "@chakra-ui/react";
+import { useState } from "react";
 
 function ArtistRegister() {
+  const [show, setShow] = useState(false);
+  const [password, setPassword] = useState("");
+
+  function handleClickPassword() {
+    setShow(!show);
+  }
+
   return (
     <Stack>
       <Box textAlign="center" border="4px" bg={"#FFFF00"} p={8}>
@@ -65,9 +75,24 @@ function ArtistRegister() {
           placeholder="Descrição de loja, produtos, serviços ..."
         />
         <FormLabel>Senha:</FormLabel>
-        <Input border="2px" />
+        <InputGroup>
+          <Input border="2px" type={show ? "text" : "password"} />
+          <InputRightElement>
+            <Button h="1.75rem" size="md" onClick={handleClickPassword}>
+              {show ? "Esconder" : "Mostrar"}
+            </Button>
+          </InputRightElement>
+        </InputGroup>
+
         <FormLabel>Confirmar Senha:</FormLabel>
-        <Input border="2px" />
+        <InputGroup>
+          <Input border="2px" type={show ? "text" : "password"} />
+          <InputRightElement>
+            <Button h="1.75rem" size="md" onClick={handleClickPassword}>
+              {show ? "Esconder" : "Mostrar"}
+            </Button>
+          </InputRightElement>
+        </InputGroup>
         <Box>
           <Text color={"#9E9E9E"}>
             Por favor, leia atentamente os termos e condições abaixo antes de
