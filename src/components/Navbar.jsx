@@ -4,6 +4,7 @@ import logo from '../assets/logo.png';
 import user from '../assets/user.png';
 import bag from '../assets/bag.png';
 import '../styles/home.css';
+import ProductFilters from './ProductFilters';
 
 function Navbar(){
     return(
@@ -23,6 +24,7 @@ function Navbar(){
                 <Link href="" className='montserrat600 categoria'>CINEMA</Link>
                 <Link href="" className='montserrat600 categoria'>ARTESANATO</Link>
             </HStack>
+            <ProductFilters></ProductFilters>
         </Box>
     );
 }

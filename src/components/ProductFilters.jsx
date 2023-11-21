@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {
   Drawer,
   DrawerBody,
@@ -7,6 +9,8 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from '@chakra-ui/react'
+
+import {Button, Input, useDisclosure} from '@chakra-ui/react'
 
 function ProductFilters() {
   const { isOpen, onOpen, onClose } = useDisclosure()
