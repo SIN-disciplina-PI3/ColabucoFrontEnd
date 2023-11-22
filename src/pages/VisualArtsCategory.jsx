@@ -10,6 +10,7 @@ import Categories from '../components/Categories';
 import BuyByArtist from '../components/BuyByArtist';
 import Footer from '../components/Footer';
 
+
 function VisualArtsCategory() {
   return (
     <Box className="content">
