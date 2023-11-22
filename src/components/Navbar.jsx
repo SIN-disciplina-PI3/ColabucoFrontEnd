@@ -1,13 +1,10 @@
-import { Box, Image, Link, Input, HStack, useColorMode, Button } from '@chakra-ui/react';
+import { Box, Image, Link, Input, HStack, useColorMode,  Icon} from '@chakra-ui/react';
 import theme from '../styles/theme';
 import logo from '../assets/logo.png';
 import user from '../assets/user.png';
 import bag from '../assets/bag.png';
 import '../styles/home.css';
-
-
-
-
+import { SunIcon } from '@chakra-ui/icons';
 
 
 function Navbar() {
@@ -32,9 +29,17 @@ function Navbar() {
                     <Link>
                         <Image href="/carrinho" src={bag} alt='Ícone bolsa de compras' />
                     </Link>
-                    <Button _hover='none' onClick={toggleColorMode}>
-                        Modo {colorMode === 'light' ? 'Escuro' : 'Claro'}
-                    </Button>
+
+                    <Icon as={SunIcon} onClick={toggleColorMode}   />
+                    
+
+                   {/*<Button src={SunIcon} onClick={toggleColorMode}>
+                         {colorMode === 'light' ? 'Escuro' : 'Claro'}
+                         </Button> */ }
+
+
+
+
                 </HStack>
 
             </HStack>
