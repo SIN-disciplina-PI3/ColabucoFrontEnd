@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {
+  Image,
   Drawer,
   DrawerBody,
   DrawerFooter,
@@ -10,39 +11,52 @@ import {
   DrawerCloseButton,
 } from '@chakra-ui/react'
 
+import sandwich from '../assets/sandwich.svg';
+
 import {Button, Input, useDisclosure} from '@chakra-ui/react'
+
+import '../styles/home.css';
 
 function ProductFilters() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
-
+ 
   return (
     <>
-      <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-        Open
+    
+      <Button ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
+        <Image src = {sandwich}></Image>
       </Button>
       <Drawer
         isOpen={isOpen}
-        placement='right'
+        placement='left'
         onClose={onClose}
         finalFocusRef={btnRef}
+        size='md'  
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerCloseButton>
+            <Image src = {sandwich}></Image>
+          </DrawerCloseButton>
 
-          <DrawerBody>
-            <Input placeholder='Type here...' />
+          <DrawerHeader className='montserrat700' textAlign="center" fontSize="32px" border='solid 5px black'>Filtros</DrawerHeader>
+
+          <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
+            <Button
+            w='353px'h='65px' border='solid 3px black' borderRadius='8px' bg='#0099FF' 
+            className='montserrat600' fontSize="20px" colorScheme='buttonscheme' textColor='black'
+          > PROMOÇÃO </Button>
           </DrawerBody>
 
-          <DrawerFooter>
+          {/* <DrawerFooter>
             <Button variant='outline' mr={3} onClick={onClose}>
               Cancel
             </Button>
             <Button colorScheme='blue'>Save</Button>
-          </DrawerFooter>
+          </DrawerFooter> */}
         </DrawerContent>
+        
       </Drawer>
     </>
   )

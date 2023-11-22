@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap');
+
 .content {
     text-align: center;
 }
@@ -10,6 +12,11 @@
 .montserrat600{
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
+}
+
+.montserrat700{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
 }
 
 .categoria{
