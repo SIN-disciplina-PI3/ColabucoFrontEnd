@@ -77,8 +77,14 @@ function ArtistRegister() {
         <FormLabel>Senha:</FormLabel>
         <InputGroup>
           <Input border="2px" type={show ? "text" : "password"} />
-          <InputRightElement>
-            <Button h="1.75rem" size="md" onClick={handleClickPassword}>
+          <InputRightElement width="8rem">
+            <Button
+              h="1.75rem"
+              size="md"
+              color="white"
+              bg={"#6600CC"}
+              onClick={handleClickPassword}
+            >
               {show ? "Esconder" : "Mostrar"}
             </Button>
           </InputRightElement>
@@ -87,8 +93,14 @@ function ArtistRegister() {
         <FormLabel>Confirmar Senha:</FormLabel>
         <InputGroup>
           <Input border="2px" type={show ? "text" : "password"} />
-          <InputRightElement>
-            <Button h="1.75rem" size="md" onClick={handleClickPassword}>
+          <InputRightElement width="8rem">
+            <Button
+              h="1.75rem"
+              size="md"
+              color="white"
+              bg={"#6600CC"}
+              onClick={handleClickPassword}
+            >
               {show ? "Esconder" : "Mostrar"}
             </Button>
           </InputRightElement>
