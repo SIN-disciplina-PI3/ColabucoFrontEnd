@@ -1,14 +1,17 @@
-import { Box, Image, Link, Input, HStack, useColorMode,  Icon} from '@chakra-ui/react';
+import { Box, Image, Link, Input, HStack, useColorMode, CircleIcon, IconButton, Icon } from '@chakra-ui/react';
 import theme from '../styles/theme';
 import logo from '../assets/logo.png';
 import user from '../assets/user.png';
 import bag from '../assets/bag.png';
 import '../styles/home.css';
-import { SunIcon } from '@chakra-ui/icons';
+import { SunIcon, } from '@chakra-ui/icons';
+import { FiSun, FiMoon,FiUser, FiShoppingBag } from "react-icons/fi";
 
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
+
+
     return (
         <Box>
             <HStack borderBottom='solid 3px black'
@@ -23,22 +26,25 @@ function Navbar() {
                 <HStack align='center' spacing='15%'>
 
                     <Link href="/login">
-                        <Image src={user} alt='Ícone perfil' />
+                        <Icon as={FiUser}  w={8} h={8} />
                     </Link>
 
-                    <Link>
-                        <Image href="/carrinho" src={bag} alt='Ícone bolsa de compras' />
+                    <Link size='lg' href='/carrinho'>
+                        <Icon as={FiShoppingBag}  w={8} h={8} />
                     </Link>
 
-                    <Icon as={SunIcon} onClick={toggleColorMode}   />
-                    
+                    <IconButton
+                    icon={colorMode === "light" ? <FiSun /> : <FiMoon />}
+                        aria-label='Sun'
+                        isRound={true}
+                        size='sm'
+                        onClick={toggleColorMode}
 
-                   {/*<Button src={SunIcon} onClick={toggleColorMode}>
+                    />
+
+                    {/*<Button src={SunIcon} onClick={toggleColorMode}>
                          {colorMode === 'light' ? 'Escuro' : 'Claro'}
                          </Button> */ }
-
-
-
 
                 </HStack>
 
@@ -47,12 +53,12 @@ function Navbar() {
                 <Link
                     style={{ textDecoration: 'none' }} href=""
                     className='fonte2 categoria'>
-                    ARTES VISUAIS
+                    INÍCIO
                 </Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>MÚSICA</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>LITERATURA</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>CINEMA</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTESANATO</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>PRODUTOS</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE COLABUCO</Link>
+
             </HStack>
         </Box>
     );
