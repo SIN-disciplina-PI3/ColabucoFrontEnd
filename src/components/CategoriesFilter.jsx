@@ -13,8 +13,12 @@ function CategoriesFilter() {
         digital: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px'},
     });
 
+    const formatCategoryName = (category) => {
+        return category === 'artesVisuais' ? 'ARTES VISUAIS' : category.toUpperCase();
+        
+    };
+
     const handleButtonClick = (category) => {
-        // Atualiza o estado com a nova largura do border do botão clicado
         setButtonStyles((prevStyles) => ({
             ...prevStyles,
             [category]: {
@@ -32,7 +36,7 @@ function CategoriesFilter() {
                 <Wrap spacing={3}>
                 {Object.keys(buttonStyles).map((category) => (
                     <WrapItem key={category}>
-                        <Button className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{category.toUpperCase()}</Button>                   
+                        <Button className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{formatCategoryName(category)}</Button>                   
                     </WrapItem>))}
                 </Wrap>
             </Stack>
