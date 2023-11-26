@@ -2,19 +2,19 @@ import { Button, Stack, WrapItem, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
 import '../styles/home.css';
 
-function CategoriesFilter() {
+function CategoriesFilterGenres() {
     const [buttonStyles, setButtonStyles] = useState({
-        cinema: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        musica: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        literatura: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesVisuais: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesanato: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        papelaria: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        roupa: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        grafite: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        rock: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        animes: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        mpb: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        culturaPop: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
         digital: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
     });
 
     const formatCategoryName = (category) => {
-        return category === 'artesVisuais' ? 'ARTES VISUAIS' : category.toUpperCase();
+        return category === 'culturaPop' ? 'CULTURA POP' : category.toUpperCase();
     };
 
     const handleButtonClick = (category) => {
@@ -43,4 +43,4 @@ function CategoriesFilter() {
     );
 }
 
-export default CategoriesFilter;
+export default CategoriesFilterGenres;

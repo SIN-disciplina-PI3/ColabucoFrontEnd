@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Button, 
+  Button,
   useDisclosure,
   Image,
   Drawer,
@@ -10,12 +10,15 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Stack
 } from '@chakra-ui/react'
 import sandwich from '../assets/sandwich.svg';
 import sandwich2 from '../assets/sandwich2.svg';
 import SectionTitleFilters from './SectionTitleFilters';
 import CategoriesFilter from './CategoriesFilter';
+import CategoriesFilterGenres from './CategoriesFilterGender';
+import SliderFilter from './SliderFilter';
+import AvailabilityFilters from './AvailabilityFilters';
+
 
 function ProductFilters() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -43,14 +46,16 @@ function ProductFilters() {
           </DrawerHeader>
 
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
-            <Button w='353px' h='65px' border='solid 3px black' borderRadius='8px' bg='#0099FF' borderBottom='solid 5px' borderLeft='solid 5px' className='montserrat600' fontSize='20px' colorScheme='buttonscheme' textColor='black'> PROMOÇÃO 
+            <Button w='353px' h='65px' border='solid 3px black' borderRadius='8px' bg='#0099FF' borderBottom='solid 5px' borderLeft='solid 5px' className='montserrat600' fontSize='20px' colorScheme='buttonscheme' textColor='black'> PROMOÇÃO
             </Button>
             <SectionTitleFilters title='Categorias' />
-            <CategoriesFilter></CategoriesFilter>
+              <CategoriesFilter></CategoriesFilter>
             <SectionTitleFilters title='Preço' />
-            <CategoriesFilter></CategoriesFilter>
+              <SliderFilter></SliderFilter>
             <SectionTitleFilters title='Disponibilidade' />
+              <AvailabilityFilters></AvailabilityFilters>
             <SectionTitleFilters title='Gênero' />
+              <CategoriesFilterGenres></CategoriesFilterGenres>
           </DrawerBody>
 
           {/* <DrawerFooter>

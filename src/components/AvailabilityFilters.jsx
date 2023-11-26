@@ -2,19 +2,24 @@ import { Button, Stack, WrapItem, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
 import '../styles/home.css';
 
-function CategoriesFilter() {
+function AvailabilityFilters() {
     const [buttonStyles, setButtonStyles] = useState({
-        cinema: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        musica: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        literatura: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesVisuais: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesanato: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        papelaria: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        digital: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        preVenda: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px'},
+        prontaEntrega: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px'},
+        porEncomenda: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px'},
     });
 
     const formatCategoryName = (category) => {
-        return category === 'artesVisuais' ? 'ARTES VISUAIS' : category.toUpperCase();
+        switch (category) {
+        case 'preVenda' :
+            return 'PRÉ-VENDA';
+        case 'prontaEntrega' :
+            return 'PRONTA ENTREGA'
+        case 'porEncomenda' :
+            return'POR ENCOMENDA';
+        default :
+            return category.toUpperCase();
+        }
     };
 
     const handleButtonClick = (category) => {
@@ -43,4 +48,4 @@ function CategoriesFilter() {
     );
 }
 
-export default CategoriesFilter;
+export default AvailabilityFilters;
