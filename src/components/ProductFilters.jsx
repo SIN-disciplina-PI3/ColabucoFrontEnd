@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton,} from '@chakra-ui/react'
+import { Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton, Stack,} from '@chakra-ui/react'
 import sandwich from '../assets/sandwich.svg';
-import sandwich2 from '../assets/sandwich2.svg';
+import close from '../assets/close.svg'
 import SectionTitleFilters from './SectionTitleFilters';
 import CategoriesFilter from './CategoriesFilter';
 import CategoriesFilterGenres from './CategoriesFilterGender';
@@ -29,11 +29,14 @@ function ProductFilters() {
         <DrawerOverlay />
 
         <DrawerContent>
-          <DrawerHeader h='136px' className='montserrat700' fontSize='32px' border='solid 5px black' textAlign='center'> Filtros
-            <DrawerCloseButton w='45' h='27' pt='35px' pr='24px '>
-              <Image src={sandwich2}></Image>
+          <Stack h='136px' border='solid 5px black'>
+            <DrawerHeader  pt='40px'className='montserrat700' fontSize='32px' textAlign='center'> Filtros
+            <DrawerCloseButton w='45' h='27' pt='60px' pr='24px ' _hover={{ backgroundColor: 'none' }}>
+              <Image src={close}></Image>
             </DrawerCloseButton>
           </DrawerHeader>
+          </Stack>
+          
 
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
             <ButtonOffers></ButtonOffers>
