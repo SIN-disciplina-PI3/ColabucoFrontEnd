@@ -1,4 +1,4 @@
-import { Button, Stack, WrapItem, Wrap } from "@chakra-ui/react";
+import { Button, Stack, WrapItem, Wrap, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import '../styles/home.css';
 
@@ -37,12 +37,12 @@ function AvailabilityFilters() {
     return (
         <>
             <Stack pt='100px'>
-                <Wrap spacing={3}>
+                <Stack>
                     {Object.keys(buttonStyles).map((category) => (
-                        <WrapItem key={category}>
-                            <Button className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{formatCategoryName(category)}</Button>
-                        </WrapItem>))}
-                </Wrap>
+                        <Box key={category}>
+                            <Button w='100%'className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{formatCategoryName(category)}</Button>
+                        </Box>))}
+                </Stack>
             </Stack>
         </>
     );

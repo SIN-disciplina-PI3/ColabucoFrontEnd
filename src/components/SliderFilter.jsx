@@ -36,14 +36,14 @@ function SliderFilter() {
                 </SliderThumb>
 
                 <Stack>
-                    <SliderMark value={1} mt='21px' fontSize='18px'>
+                    <SliderMark value={1} mt='21px' ml='0' fontSize='18px'>
                         R$ 1,00
                     </SliderMark>
                     <SliderMark value={50} mt='21px' fontSize='18px'>
                         R$ 50,00
                     </SliderMark>
                     <SliderMark value={100} mt='21px' fontSize='18px'>
-                        R$ 100,00
+                        R$ 300,00
                     </SliderMark>
                 </Stack>
             </Slider>
