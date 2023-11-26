@@ -1,16 +1,5 @@
 import React from 'react'
-import {
-  Button,
-  useDisclosure,
-  Image,
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from '@chakra-ui/react'
+import { Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton,} from '@chakra-ui/react'
 import sandwich from '../assets/sandwich.svg';
 import sandwich2 from '../assets/sandwich2.svg';
 import SectionTitleFilters from './SectionTitleFilters';
@@ -18,6 +7,7 @@ import CategoriesFilter from './CategoriesFilter';
 import CategoriesFilterGenres from './CategoriesFilterGender';
 import SliderFilter from './SliderFilter';
 import AvailabilityFilters from './AvailabilityFilters';
+import ButtonOffers from './ButtonOffers';
 
 
 function ProductFilters() {
@@ -46,8 +36,7 @@ function ProductFilters() {
           </DrawerHeader>
 
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
-            <Button w='353px' h='65px' border='solid 3px black' borderRadius='8px' bg='#0099FF' borderBottom='solid 5px' borderLeft='solid 5px' className='montserrat600' fontSize='20px' colorScheme='buttonscheme' textColor='black'> PROMOÇÃO
-            </Button>
+            <ButtonOffers></ButtonOffers>
             <SectionTitleFilters title='Categorias' />
               <CategoriesFilter></CategoriesFilter>
             <SectionTitleFilters title='Preço' />
@@ -58,12 +47,12 @@ function ProductFilters() {
               <CategoriesFilterGenres></CategoriesFilterGenres>
           </DrawerBody>
 
-          {/* <DrawerFooter>
-            <Button variant='outline' mr={3} onClick={onClose}>
-              Cancel
+           <DrawerFooter>
+            <Button className='categoriaFiltros' mr={3}>
+              Limpar
             </Button>
-            <Button colorScheme='blue'>Save</Button>
-          </DrawerFooter> */}
+            <Button className='categoriaFiltros' _hover={{ backgroundColor: 'none' }} backgroundColor='#09F'>Aplicar</Button>
+          </DrawerFooter>
 
         </DrawerContent>
       </Drawer>

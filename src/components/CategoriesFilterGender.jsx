@@ -32,7 +32,7 @@ function CategoriesFilterGenres() {
     return (
         <>
             <Stack pt='100px'>
-                <Wrap spacing={3}>
+                <Wrap spacing={3.5}>
                     {Object.keys(buttonStyles).map((category) => (
                         <WrapItem key={category}>
                             <Button className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{formatCategoryName(category)}</Button>
