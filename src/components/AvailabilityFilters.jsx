@@ -1,4 +1,4 @@
-import { Button, Stack, WrapItem, Wrap, Box } from "@chakra-ui/react";
+import { Button, Stack, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import '../styles/home.css';
 

@@ -31,7 +31,7 @@ function ProductFilters() {
         <DrawerContent>
           <Stack h='136px' border='solid 5px black'>
             <DrawerHeader  pt='40px'className='montserrat700' fontSize='32px' textAlign='center'> Filtros
-            <DrawerCloseButton w='45' h='27' pt='60px' pr='24px ' _hover={{ backgroundColor: 'none' }}>
+            <DrawerCloseButton w='45' h='27' pt='60px' pr='24px' _hover={{ backgroundColor: 'none' }}>
               <Image src={close}></Image>
             </DrawerCloseButton>
           </DrawerHeader>
