@@ -14,7 +14,14 @@ function CategoriesFilter() {
     });
 
     const formatCategoryName = (category) => {
-        return category === 'artesVisuais' ? 'ARTES VISUAIS' : category.toUpperCase();
+        switch (category) {
+            case 'musica' :
+                return 'MÚSICA';
+            case 'artesVisuais' :
+                return 'ARTES VISUAIS';
+            default :
+                return category.toUpperCase();
+            }
     };
 
     const handleButtonClick = (category) => {

@@ -40,13 +40,13 @@ function ProductFilters() {
 
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
             <ButtonOffers></ButtonOffers>
-            <SectionTitleFilters title='Categorias' />
+            <SectionTitleFilters w='188px' title='Categorias' />
               <CategoriesFilter></CategoriesFilter>
-            <SectionTitleFilters title='Preço' />
+            <SectionTitleFilters w='107px' title='Preço' />
               <SliderFilter></SliderFilter>
-            <SectionTitleFilters title='Disponibilidade' />
+            <SectionTitleFilters w='211px' title='Disponibilidade' />
               <AvailabilityFilters></AvailabilityFilters>
-            <SectionTitleFilters title='Gênero' />
+            <SectionTitleFilters w='122px'title='Gênero' />
               <CategoriesFilterGenres></CategoriesFilterGenres>
           </DrawerBody>
 
@@ -54,7 +54,7 @@ function ProductFilters() {
             <Button className='categoriaFiltros' mr={3}>
               Limpar
             </Button>
-            <Button className='categoriaFiltros' _hover={{ backgroundColor: 'none' }} backgroundColor='#09F'>Aplicar</Button>
+            <Button className='categoriaFiltros' onClick={onClose} _hover={{ backgroundColor: 'none' }} backgroundColor='#09F'>Aplicar</Button>
           </DrawerFooter>
 
         </DrawerContent>

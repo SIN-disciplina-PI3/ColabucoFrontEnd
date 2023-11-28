@@ -14,6 +14,7 @@ import sliderthumb from '../assets/sliderthumb.svg';
 function SliderFilter() {
     const [sliderValue, setSliderValue] = React.useState(5)
     const [showTooltip, setShowTooltip] = React.useState(false)
+    
     return (
         <Stack pt='100px' className='montserrat700' pb='32px'>
             <Slider
@@ -35,13 +36,13 @@ function SliderFilter() {
                 </SliderThumb>
 
                 <Stack>
-                    <SliderMark value={1} mt='21px' ml='0' fontSize='18px'>
+                    <SliderMark value={0} mt='21px' ml='0' fontSize='18px'>
                         R$ 1,00
                     </SliderMark>
-                    <SliderMark value={50} mt='21px' fontSize='18px'>
+                    <SliderMark value={50} mt='21px'  ml='-10%'fontSize='18px'>
                         R$ 50,00
                     </SliderMark>
-                    <SliderMark value={100} mt='21px' fontSize='18px'>
+                    <SliderMark value={100} mt='21px' ml='-21%' fontSize='18px'>
                         R$ 300,00
                     </SliderMark>
                 </Stack>
