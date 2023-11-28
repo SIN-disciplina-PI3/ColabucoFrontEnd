@@ -5,6 +5,7 @@ import user from '../assets/user.png';
 import bag from '../assets/bag.png';
 import '../styles/home.css';
 
+
 function Navbar(){
     return(
         <Box>
