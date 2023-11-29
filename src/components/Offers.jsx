@@ -9,7 +9,6 @@ function Offers(props) {
         <Box my={12}>
             <SectionTitle title='Ofertas'/>
             <ProductFilters></ProductFilters>
-            <SectionTitle title='Ofertas' />
             <Center>
                 <CardProduct />
                 <CardProduct />
