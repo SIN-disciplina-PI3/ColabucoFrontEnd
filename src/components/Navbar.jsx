@@ -11,7 +11,8 @@ import { FiSun, FiMoon,FiUser, FiShoppingBag } from "react-icons/fi";
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
 
-
+function Navbar(){
+   
     return (
         <Box>
             <HStack borderBottom='solid 3px black'
