@@ -16,7 +16,7 @@ function Navbar() {
             <HStack borderBottom='solid 3px black'
                 p='10px 100px'
                 spacing='8%'>
-                <Image src={logo} alt='Logo Colabuco' />
+                <Link href='/'><Image src={logo} alt='Logo Colabuco' /></Link>
                 <Input placeholder='O que você procura?'
                     w='60%'
                     border='solid 3px black'
@@ -50,13 +50,13 @@ function Navbar() {
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
                 <Link
-                    style={{ textDecoration: 'none' }} href=""
+                    style={{ textDecoration: 'none' }} href="/"
                     className='fonte2 categoria'>
                     INÍCIO
                 </Link>
                 <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>PRODUTOS</Link>
                 <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE COLABUCO</Link>
+                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
 
             </HStack>
         </Box>
