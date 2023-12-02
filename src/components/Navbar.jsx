@@ -54,7 +54,7 @@ function Navbar() {
                     className='fonte2 categoria'>
                     INÍCIO
                 </Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>PRODUTOS</Link>
+                <Link style={{ textDecoration: 'none' }} href="productscreen" className='fonte2 categoria'>PRODUTOS</Link>
                 <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
                 <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
 
