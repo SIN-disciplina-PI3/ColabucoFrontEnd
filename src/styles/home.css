@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -28,9 +28,10 @@
     font-weight: 500;
 }
 
-.montserrat600{
+.fonte2{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    
 }
 
 .montserrat700{
@@ -38,11 +39,33 @@
     font-weight: 700;
 }
 
+.montserrat800title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: #000;
+}
+
+.montserrat800{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+}
+
+.montserrat600italic{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
 .categoria{
     padding: 15px 11px;
 }
 
 .selecionado{
+    text-decoration:line-through;
+}
+.categoria:hover{
     background-color: rgba(0, 0, 0, 0.05);
     border-bottom: solid 3px black;
 }
@@ -51,4 +74,9 @@
     position: relative;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.buttonMode{
+     border: 'solid';
+    padding: '1%';
 }
