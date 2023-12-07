@@ -28,9 +28,10 @@
     font-weight: 500;
 }
 
-.montserrat600{
+.fonte2{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    
 }
 
 .montserrat700{
@@ -43,6 +44,9 @@
 }
 
 .selecionado{
+    text-decoration:line-through;
+}
+.categoria:hover{
     background-color: rgba(0, 0, 0, 0.05);
     border-bottom: solid 3px black;
 }
@@ -51,4 +55,9 @@
     position: relative;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.buttonMode{
+     border: 'solid';
+    padding: '1%';
 }
