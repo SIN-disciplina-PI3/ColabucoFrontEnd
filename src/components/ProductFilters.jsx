@@ -16,7 +16,7 @@ function ProductFilters() {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
+      <Button top='831' left='60px' position='absolute' ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
         <Image src={sandwich}></Image>
       </Button>
       <Drawer

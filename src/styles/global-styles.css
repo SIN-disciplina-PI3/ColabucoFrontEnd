@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+.borda, Input, Button{
+    border-radius: 8px;
+    border: solid black 3px;
+}
+
+.spacingy > *{
+    margin-bottom: 16px;
+}
+
+.fw7{
+    font-weight: 700;
+}

@@ -1,3 +1,4 @@
+
 import '../styles/home.css';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
@@ -10,6 +11,7 @@ import Categories from '../components/Categories';
 import BuyByArtist from '../components/BuyByArtist';
 import Footer from '../components/Footer';
 
+
 function VisualArtsCategory() {
   return (
     <Box className="content">
@@ -20,14 +22,14 @@ function VisualArtsCategory() {
       <Box w='100%' px='12%'>
         <Offers />
         <Center>
-          <FeaturedArtists/>
-          <FeaturedArtists/>
+          <FeaturedArtists />
+          <FeaturedArtists />
         </Center>
-        <TopSelling/>
-        <Categories/>
-        <BuyByArtist/>
+        <TopSelling />
+        <Categories />
+        <BuyByArtist />
       </Box>
-      
+
       <Footer />
     </Box>
   );
