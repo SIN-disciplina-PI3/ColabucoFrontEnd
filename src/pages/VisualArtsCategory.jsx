@@ -10,7 +10,12 @@ import Categories from '../components/Categories';
 import BuyByArtist from '../components/BuyByArtist';
 import Footer from '../components/Footer';
 
+<<<<<<< Updated upstream:src/pages/VisualArtsCategory.jsx
 function VisualArtsCategory() {
+=======
+
+function Home() {
+>>>>>>> Stashed changes:src/pages/Home.jsx
   return (
     <Box className="content">
       <Navbar />
@@ -33,4 +38,4 @@ function VisualArtsCategory() {
   );
 }
 
-export default VisualArtsCategory;
+export default Home;
