@@ -1,11 +1,11 @@
 import { Box, Stack } from "@chakra-ui/react"
 import Navbar from "../components/Navbar"
-import ProductImage from "../components/Product/ProductImage"
-import ProductTitle from "../components/Product/ProductTitle"
-import ProductArtist from "../components/Product/ProductArtist"
-import ProductPrice from "../components/Product/ProductPrice"
-import ProductDescription from "../components/Product/ProductDescription"
-import ProductColor from "../components/Product/ProductColor"
+import ProductImage from "../components/product/ProductImage"
+import ProductTitle from "../components/product/ProductTitle"
+import ProductArtist from "../components/product/ProductArtist"
+import ProductPrice from "../components/product/ProductPrice"
+import ProductDescription from "../components/product/ProductDescription"
+import ProductColor from "../components/product/ProductColor"
 
 function ProductScreen() {
     return (
