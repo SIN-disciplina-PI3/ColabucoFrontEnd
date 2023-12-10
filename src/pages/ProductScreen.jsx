@@ -15,7 +15,7 @@ function ProductScreen() {
         <Navbar></Navbar>
        
             <Flex>
-                <ProductImage src='https://i.discogs.com/yGmG6qztvTovGqYvQOefrsdlW5dLTIHdyrQVw2PgUfk/rs:fit/g:sm/q:90/h:554/w:554/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1MzY4/NTYtMTU3MjU0OTEx/OS02NjQzLmpwZWc.jpeg'/>
+                <ProductImage pt='64px' pl='171px' border='4px' borderRadius='8px' src='https://i.discogs.com/yGmG6qztvTovGqYvQOefrsdlW5dLTIHdyrQVw2PgUfk/rs:fit/g:sm/q:90/h:554/w:554/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1MzY4/NTYtMTU3MjU0OTEx/OS02NjQzLmpwZWc.jpeg'/>
                 <Box ml='64px' mt='48px'>
                     <ProductTitle title='Ednaldo Pereira'></ProductTitle>
                     <ProductArtist title='@ednaldopereira'></ProductArtist>

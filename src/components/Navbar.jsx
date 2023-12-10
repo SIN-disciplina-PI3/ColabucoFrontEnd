@@ -1,4 +1,5 @@
-import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal } from '@chakra-ui/react';
+import React from 'react'
+import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal, Drawer, useDisclosure } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
 import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
 
@@ -10,11 +11,13 @@ import {
     PopoverArrow,
 } from '@chakra-ui/react'
 import Login from '../pages/Login';
+import ShoppingCart from './ShoppingCart';
 
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
-
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
     return (
         <Box >
             <HStack borderBottom='solid 3px black'
@@ -44,10 +47,7 @@ function Navbar() {
                         </Portal>
                     </Popover>
 
-
-                    <Link size='lg' href='/carrinho'>
-                        <Icon as={FiShoppingBag} w={8} h={8} />
-                    </Link>
+                    <ShoppingCart></ShoppingCart>
 
                     <IconButton
                         icon={colorMode === "light" ? <FiSun /> : <FiMoon />}

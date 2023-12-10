@@ -52,7 +52,7 @@ function ProductFilters() {
               <CategoriesFilterGender></CategoriesFilterGender>
           </DrawerBody>
 
-           <DrawerFooter>
+           <DrawerFooter border='solid 0.3rem black'>
             <Button className='categoriaFiltros' mr={3}>
               Limpar
             </Button>
