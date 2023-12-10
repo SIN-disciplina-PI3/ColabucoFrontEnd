@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Image } from '@chakra-ui/react';
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
-import rightArrow from '../assets/right-arrow.svg';
-import leftArrow from '../assets/left-arrow.svg';
+import rightArrow from '../../assets/right-arrow.svg';
+import leftArrow from '../../assets/left-arrow.svg';
 import Slider from 'react-slick';
-import banner1 from '../assets/banner1.jpg';
+import banner1 from '../../assets/banner1.jpg';
 
 const settings = {
   dots: true,

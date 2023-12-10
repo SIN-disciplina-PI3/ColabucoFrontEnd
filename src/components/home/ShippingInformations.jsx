@@ -1,7 +1,6 @@
 import { Image, Text, HStack } from '@chakra-ui/react';
-import boxes1 from '../assets/boxes1.png';
-import boxes2 from '../assets/boxes2.png';
-import '../styles/home.css'
+import boxes1 from '../../assets/boxes1.png';
+import boxes2 from '../../assets/boxes2.png';
 
 function ShippingInformations() {
     return (

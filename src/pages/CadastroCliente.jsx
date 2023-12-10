@@ -1,5 +1,6 @@
 import React from "react";
-import NavBar from './/..//components/Navbar'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Button, Input, FormControl, FormLabel, Checkbox, Flex, Box, Text, InputRightElement, InputGroup } from "@chakra-ui/react";
 import { useState } from "react";
 
@@ -41,10 +42,10 @@ function CadastroCliente() {
     }
 
     return (
-
+        <>
         <Box>
 
-            <NavBar />
+            <Navbar />
 
             <Flex flexDirection='column' border='black 3px solid' h={'131px'} bgColor={'#6600CC'} color={'white'} textAlign='center' >
                 <Text mt='25px' className='montserrat800' fontSize={'25px'}>CADASTRE-SE</Text>
@@ -117,6 +118,9 @@ function CadastroCliente() {
                 <Text className='montserrat800'>CRIAR CONTA</Text>
             </Button>
         </Box>
+
+    <Footer />
+    </>
     );
 }
 

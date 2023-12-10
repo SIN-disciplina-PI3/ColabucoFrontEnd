@@ -40,7 +40,7 @@ function CardProduct() {
               R$100,00
             </Text>
             <Text textDecoration={'line-through'} color={'gray.600'}>
-              $199
+              R$199
             </Text>
           </Stack>
         </Stack>

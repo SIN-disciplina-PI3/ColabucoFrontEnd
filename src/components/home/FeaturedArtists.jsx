@@ -1,5 +1,4 @@
 import { Box, Text } from "@chakra-ui/react";
-import '../styles/home.css';
 
 function FeaturedArtists(sombra) {
     return (

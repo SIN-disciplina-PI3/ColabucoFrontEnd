@@ -6,6 +6,7 @@ import ProductArtist from "../components/product/ProductArtist"
 import ProductPrice from "../components/product/ProductPrice"
 import ProductDescription from "../components/product/ProductDescription"
 import ProductColor from "../components/product/ProductColor"
+import Footer from "../components/Footer"
 
 function ProductScreen() {
     return (
@@ -28,7 +29,7 @@ function ProductScreen() {
                     </Flex>
                 </Box>
             </Flex>
-        
+        <Footer />
 
         </>
     )
