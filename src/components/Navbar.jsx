@@ -1,18 +1,13 @@
-import { Box, Image, Link, Input, HStack, useColorMode, CircleIcon, IconButton, Icon } from '@chakra-ui/react';
-import theme from '../styles/theme';
+import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
-import user from '../assets/user.png';
-import bag from '../assets/bag.png';
-import '../styles/home.css';
-import { SunIcon, } from '@chakra-ui/icons';
-import { FiSun, FiMoon,FiUser, FiShoppingBag } from "react-icons/fi";
+import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
 
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
-   
+
     return (
-        <Box>
+        <Box >
             <HStack borderBottom='solid 3px black'
                 p='10px 100px'
                 spacing='8%'>
@@ -25,15 +20,15 @@ function Navbar() {
                 <HStack align='center' spacing='15%'>
 
                     <Link href="/login">
-                        <Icon as={FiUser}  w={8} h={8} />
+                        <Icon as={FiUser} w={8} h={8} />
                     </Link>
 
                     <Link size='lg' href='/carrinho'>
-                        <Icon as={FiShoppingBag}  w={8} h={8} />
+                        <Icon as={FiShoppingBag} w={8} h={8} />
                     </Link>
 
                     <IconButton
-                    icon={colorMode === "light" ? <FiSun /> : <FiMoon />}
+                        icon={colorMode === "light" ? <FiSun /> : <FiMoon />}
                         aria-label='Sun'
                         isRound={true}
                         size='sm'
@@ -49,15 +44,10 @@ function Navbar() {
 
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
-                <Link
-                    style={{ textDecoration: 'none' }} href="/"
-                    className='fonte2 categoria'>
-                    INÍCIO
-                </Link>
-                <Link style={{ textDecoration: 'none' }} href="productscreen" className='fonte2 categoria'>PRODUTOS</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
-                <Link style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
-
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="/" className='fonte2 categoria'>INÍCIO</Link>
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="productscreen" className='fonte2 categoria'>PRODUTOS</Link>
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
             </HStack>
         </Box>
     );

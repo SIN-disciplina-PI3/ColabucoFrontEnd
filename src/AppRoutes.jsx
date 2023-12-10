@@ -7,6 +7,8 @@ import CarrinhoDeCompras from '../src/pages/CarrinhoDeCompras';
 import ProductScreen from "./pages/ProductScreen";
 import NewProductPopUp from "./pages/NewProductPopUp";
 import Management from "./pages/Management";
+import ArtistRegister from './components/ArtistRegister';
+import ArtistRegister2 from './components/ArtistRegister2';
 
 function AppRoutes(){
     return(

@@ -4,7 +4,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.borda, Input, Button{
+.borda, Input{
     border-radius: 8px;
     border: solid black 3px;
 }
@@ -16,3 +16,19 @@
 .fw7{
     font-weight: 700;
 }
+
+.content {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #C1C0C0;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e;
+  }
