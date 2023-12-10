@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal, Drawer, useDisclosure } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
-import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
+import { FiSun, FiMoon, FiUser } from "react-icons/fi";
 
 import {
     Popover,
