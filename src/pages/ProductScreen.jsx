@@ -1,17 +1,35 @@
-import { Box, Stack, Image, Text } from "@chakra-ui/react"
+import { Box, Stack } from "@chakra-ui/react"
 import Navbar from "../components/Navbar"
+import ProductImage from "../components/Product/ProductImage"
+import ProductTitle from "../components/Product/ProductTitle"
+import ProductArtist from "../components/Product/ProductArtist"
+import ProductPrice from "../components/Product/ProductPrice"
+import ProductDescription from "../components/Product/ProductDescription"
+import ProductColor from "../components/Product/ProductColor"
 
-function ProductScreen(props){
-    return(
+function ProductScreen() {
+    return (
         <>
-        <Navbar></Navbar>
 
+        <Navbar></Navbar>
         <Stack>
-            <Box pt='64px' pl='90px'>
-                <Image objectFit='cover' boxSize='500px' src={props.src} border='4px' borderRadius='8px' fallbackSrc='https://via.placeholder.com/500'></Image>
+            <Box display='flex' flexDirection='row'>
+                <ProductImage />
+                <Box ml='64px' mt='48px'>
+                    <ProductTitle></ProductTitle>
+                    <ProductArtist></ProductArtist>
+                    <ProductPrice></ProductPrice>
+                    <ProductDescription></ProductDescription>
+                    <Box mt='48px' display='flex' flexDirection='row' gap='22px'>
+                        <ProductColor bg='#F6F099'></ProductColor>
+                        <ProductColor bg='#F3985B'></ProductColor>
+                        <ProductColor bg='#96D5FF'></ProductColor>
+                        <ProductColor bg='#8CEAA6'></ProductColor>
+                    </Box>
+                </Box>
             </Box>
-            <Text ml='650' mt='40px' fontSize='64px' position='absolute' className="montserrat700">Nome do Produto</Text> 
         </Stack>
+
         </>
     )
 }
