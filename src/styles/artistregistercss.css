@@ -1,0 +1,9 @@
+.inputFile::-webkit-file-upload-button {
+  display: none;
+}
+.inputFile {
+  color: transparent;
+}
+.inputFile::after {
+  content: " ";
+}
