@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import CarrinhoDeCompras from '../src/pages/CarrinhoDeCompras';
 import ProductScreen from "./pages/ProductScreen";
 import NewProductPopUp from "./pages/NewProductPopUp";
+import Management from "./pages/Management";
 
 function AppRoutes(){
     return(
@@ -17,6 +18,7 @@ function AppRoutes(){
             <Route path="carrinho" element={<CarrinhoDeCompras />} />
             <Route path="productscreen" element= {<ProductScreen />} />
             <Route path="newproduct" element={<NewProductPopUp />} />
+            <Route path="management" element={<Management/>}></Route>
         </Routes>
     );
 }
