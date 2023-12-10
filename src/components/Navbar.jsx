@@ -1,6 +1,15 @@
-import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon } from '@chakra-ui/react';
+import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
 import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
+
+import {
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverBody,
+    PopoverArrow,
+} from '@chakra-ui/react'
+import Login from '../pages/Login';
 
 
 function Navbar() {
@@ -19,9 +28,22 @@ function Navbar() {
                 />
                 <HStack align='center' spacing='15%'>
 
-                    <Link href="/login">
-                        <Icon as={FiUser} w={8} h={8} />
-                    </Link>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Link >
+                                <Icon as={FiUser} w={8} h={8} />
+                            </Link>
+                        </PopoverTrigger>
+                        <Portal>
+                        <PopoverContent w='45rem' h='30rem'>
+                        <PopoverArrow />
+                        <PopoverBody>
+                            <Login></Login>
+                        </PopoverBody>
+                        </PopoverContent>
+                        </Portal>
+                    </Popover>
+
 
                     <Link size='lg' href='/carrinho'>
                         <Icon as={FiShoppingBag} w={8} h={8} />

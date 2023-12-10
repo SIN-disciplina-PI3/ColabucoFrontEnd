@@ -70,3 +70,7 @@
     padding: '1%';
 }
 
+.custom-popover {
+    border: none !important;
+    box-shadow: none !important;
+}

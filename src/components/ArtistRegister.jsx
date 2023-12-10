@@ -99,6 +99,7 @@ function ArtistRegister({nextPopup, onClose}) {
           paddingY={8}
           paddingX={32}
           fontWeight="bold"
+          isRequired
         >
           <FormLabel>Nome da empresa ou vendedor:</FormLabel>
           <Input
