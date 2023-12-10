@@ -37,7 +37,7 @@ function CategoriesFilter() {
 
     return (
         <>
-            <Stack pt='100px'>
+            <Stack>
                 <Wrap spacing={3}>
                     {Object.keys(buttonStyles).map((category) => (
                         <WrapItem key={category}>

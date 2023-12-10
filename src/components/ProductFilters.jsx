@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton, Stack,} from '@chakra-ui/react'
+import { Box, Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton, Stack,} from '@chakra-ui/react'
 import sandwich from '../assets/sandwich.svg';
 import close from '../assets/close.svg'
 import SectionTitleFilters from './productfilters/SectionTitleFilters';
@@ -41,7 +41,9 @@ function ProductFilters() {
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
             <ButtonOffers></ButtonOffers>
             <SectionTitleFilters w='188px' title='Categorias' />
+            <Box pt='100px'>
               <CategoriesFilter></CategoriesFilter>
+            </Box>
             <SectionTitleFilters w='107px' title='Preço' />
               <SliderFilter></SliderFilter>
             <SectionTitleFilters w='211px' title='Disponibilidade' />
