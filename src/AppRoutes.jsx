@@ -6,8 +6,9 @@ import Login from './pages/Login';
 import CarrinhoDeCompras from '../src/pages/CarrinhoDeCompras';
 import ProductScreen from "./pages/ProductScreen";
 import NewProductPopUp from "./pages/NewProductPopUp";
-import Management from "./pages/Management";
 import AboutColabuco from "./pages/AboutColabuco";
+import ArtistProfile from "./pages/ArtistProfile";
+import ClientProfile from "./pages/ClientProfile";
 
 function AppRoutes(){
     return(
@@ -20,7 +21,8 @@ function AppRoutes(){
             <Route path="carrinho" element={<CarrinhoDeCompras />} />
             <Route path="productscreen" element= {<ProductScreen />} />
             <Route path="newproduct" element={<NewProductPopUp />} />
-            <Route path="management" element={<Management/>}></Route>
+            <Route path="perfilartista" element={<ArtistProfile/>}></Route>
+            <Route path="perfilcliente" element={<ClientProfile/>}></Route>
         </Routes>
     );
 }
