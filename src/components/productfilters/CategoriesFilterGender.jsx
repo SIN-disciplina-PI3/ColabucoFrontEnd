@@ -1,27 +1,19 @@
 import { Button, Stack, WrapItem, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
-import '../styles/home.css';
 
-function CategoriesFilter() {
+function CategoriesFilterGender() {
     const [buttonStyles, setButtonStyles] = useState({
-        cinema: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        musica: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        literatura: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesVisuais: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        artesanato: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
-        papelaria: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        roupa: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        grafite: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        rock: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        animes: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        mpb: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
+        culturaPop: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
         digital: { backgroundColor: 'white', borderBottomWidth: '3px', borderRightWidth: '3px' },
     });
 
     const formatCategoryName = (category) => {
-        switch (category) {
-            case 'musica' :
-                return 'MÚSICA';
-            case 'artesVisuais' :
-                return 'ARTES VISUAIS';
-            default :
-                return category.toUpperCase();
-            }
+        return category === 'culturaPop' ? 'CULTURA POP' : category.toUpperCase();
     };
 
     const handleButtonClick = (category) => {
@@ -39,7 +31,7 @@ function CategoriesFilter() {
     return (
         <>
             <Stack pt='100px'>
-                <Wrap spacing={3}>
+                <Wrap spacing={3.5}>
                     {Object.keys(buttonStyles).map((category) => (
                         <WrapItem key={category}>
                             <Button className="categoriaFiltros" _hover={{ backgroundColor: 'none' }} {...buttonStyles[category]} onClick={() => handleButtonClick(category)}>{formatCategoryName(category)}</Button>
@@ -50,4 +42,4 @@ function CategoriesFilter() {
     );
 }
 
-export default CategoriesFilter;
+export default CategoriesFilterGender;

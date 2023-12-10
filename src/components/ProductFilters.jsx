@@ -2,12 +2,12 @@ import React from 'react'
 import { Button, useDisclosure, Image, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay,  DrawerContent, DrawerCloseButton, Stack,} from '@chakra-ui/react'
 import sandwich from '../assets/sandwich.svg';
 import close from '../assets/close.svg'
-import SectionTitleFilters from './SectionTitleFilters';
-import CategoriesFilter from './CategoriesFilter';
-import CategoriesFilterGenres from './CategoriesFilterGender';
-import SliderFilter from './SliderFilter';
-import AvailabilityFilters from './AvailabilityFilters';
-import ButtonOffers from './ButtonOffers';
+import SectionTitleFilters from './productfilters/SectionTitleFilters';
+import CategoriesFilter from './productfilters/CategoriesFilter';
+import CategoriesFilterGender from './productfilters/CategoriesFilterGender';
+import SliderFilter from './productfilters/SliderFilter';
+import AvailabilityFilters from './productfilters/AvailabilityFilters';
+import ButtonOffers from './productfilters/ButtonOffers';
 
 
 function ProductFilters() {
@@ -47,7 +47,7 @@ function ProductFilters() {
             <SectionTitleFilters w='211px' title='Disponibilidade' />
               <AvailabilityFilters></AvailabilityFilters>
             <SectionTitleFilters w='122px'title='Gênero' />
-              <CategoriesFilterGenres></CategoriesFilterGenres>
+              <CategoriesFilterGender></CategoriesFilterGender>
           </DrawerBody>
 
            <DrawerFooter>

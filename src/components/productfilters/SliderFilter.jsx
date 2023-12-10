@@ -9,7 +9,7 @@ import {
     Image,
 } from '@chakra-ui/react'
 
-import sliderthumb from '../assets/sliderthumb.svg';
+import sliderthumb from '../../assets/sliderthumb.svg'
 
 function SliderFilter() {
     const [sliderValue, setSliderValue] = React.useState(5)
