@@ -42,11 +42,11 @@ function CardProduct(props) {
 
         <Stack pt={5} align={'center'}>
           <Heading fontSize={'2xl'} fontWeight={500} className='montserrat'>
-            {title}
+            {title || 'Produto'}
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontSize={'xl'} className='montserrat'>
-              {formatCurrentPrice}
+              {formatCurrentPrice} 
             </Text>
             <Text textDecoration={'line-through'} color={'gray.600'}>
               {formatInitialPrice}

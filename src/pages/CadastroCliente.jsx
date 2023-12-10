@@ -108,7 +108,7 @@ function CadastroCliente() {
                     </InputRightElement>
                 </InputGroup>
 
-                {confirmPassword ? <Text>Senha não esta igual.</Text> : <Text>✔</Text>}
+                {confirmPassword ? <Text>Senha não está igual.</Text> : <Text>✔</Text>}
 
             </FormControl>
             <Checkbox pt='3%' mb='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
