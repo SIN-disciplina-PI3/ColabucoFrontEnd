@@ -1,10 +1,10 @@
 import '../styles/home.css';
-import { Center, Box } from '@chakra-ui/react';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/home/Carousel';
 import ShippingInformations from '../components/home/ShippingInformations';
 import Offers from '../components/home/Offers';
 import FeaturedArtists from '../components/home/FeaturedArtists';
+import { Center, Box } from '@chakra-ui/react';
 import TopSelling from '../components/home/TopSelling';
 import Categories from '../components/home/Categories';
 import BuyByArtist from '../components/home/BuyByArtist';
