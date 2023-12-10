@@ -4,6 +4,10 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    *{flex-direction: column;}
+}
+
 .borda, Input{
     border-radius: 8px;
     border: solid black 3px;

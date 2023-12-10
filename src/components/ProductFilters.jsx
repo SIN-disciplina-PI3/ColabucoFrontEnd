@@ -16,7 +16,7 @@ function ProductFilters() {
 
   return (
     <>
-      <Button top='831' left='60px' position='absolute' ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
+      <Button top='52rem' left='3.7rem' position='absolute' ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
         <Image src={sandwich}></Image>
       </Button>
       <Drawer
@@ -29,9 +29,9 @@ function ProductFilters() {
         <DrawerOverlay />
 
         <DrawerContent>
-          <Stack h='136px' border='solid 5px black'>
-            <DrawerHeader  pt='40px'className='montserrat700' fontSize='32px' textAlign='center'> Filtros
-            <DrawerCloseButton w='45' h='27' pt='60px' pr='24px' _hover={{ backgroundColor: 'none' }}>
+          <Stack h='8.5rem' border='solid 0.3rem black'>
+            <DrawerHeader pt='2.5rem' className='montserrat700' fontSize='2rem' textAlign='center'> Filtros
+            <DrawerCloseButton w='2.8rem' h='1.6rem' pt='3.7rem' pr='1.5rem' _hover={{ backgroundColor: 'none' }}>
               <Image src={close}></Image>
             </DrawerCloseButton>
           </DrawerHeader>
@@ -40,15 +40,15 @@ function ProductFilters() {
 
           <DrawerBody align='center' borderX='solid 5px black' pt='32px'>
             <ButtonOffers></ButtonOffers>
-            <SectionTitleFilters w='188px' title='Categorias' />
+            <SectionTitleFilters w='11.7rem' title='Categorias' />
             <Box pt='100px'>
               <CategoriesFilter></CategoriesFilter>
             </Box>
-            <SectionTitleFilters w='107px' title='Preço' />
+            <SectionTitleFilters w='6.6rem' title='Preço' />
               <SliderFilter></SliderFilter>
-            <SectionTitleFilters w='211px' title='Disponibilidade' />
+            <SectionTitleFilters w='13rem' title='Disponibilidade' />
               <AvailabilityFilters></AvailabilityFilters>
-            <SectionTitleFilters w='122px'title='Gênero' />
+            <SectionTitleFilters w='7.6rem'title='Gênero' />
               <CategoriesFilterGender></CategoriesFilterGender>
           </DrawerBody>
 
