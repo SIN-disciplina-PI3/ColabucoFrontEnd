@@ -1,7 +1,8 @@
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, Stack } from "@chakra-ui/react";
 
 import Navbar from "../components/Navbar";
 import ProfileInformations from "../components/ProfileInformations";
+import ArtistProducts from "../components/ArtistProducts";
 
 import '../styles/global-styles.css';
 
@@ -11,9 +12,10 @@ function ArtistProfile(){
             <Navbar/>
             <Center className="fw7 borda" h={'105.01px'} bgColor={'#6600CC'} color={'white'} fontSize={'25px'}>GESTÃO DE LOJA</Center>
 
-            <Box w={'100%'} p={'30px 92px'}>
+            <Stack w={'100%'} p={'30px 92px'} gap={'35px'}>
                 <ProfileInformations/>
-            </Box>
+                <ArtistProducts/>
+            </Stack>
         </Box>
     );
 }
