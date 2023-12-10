@@ -5,17 +5,17 @@ import ProfileInformations from "../components/ProfileInformations";
 
 import '../styles/global-styles.css';
 
-function Management(){
+function ArtistProfile(){
     return(
         <Box>
             <Navbar/>
             <Center className="fw7 borda" h={'105.01px'} bgColor={'#6600CC'} color={'white'} fontSize={'25px'}>GESTÃO DE LOJA</Center>
 
-            <Box>
+            <Box w={'100%'} p={'30px 92px'}>
                 <ProfileInformations/>
             </Box>
         </Box>
     );
 }
 
-export default Management;
+export default ArtistProfile;
