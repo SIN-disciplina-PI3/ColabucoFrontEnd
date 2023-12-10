@@ -43,7 +43,6 @@ function CadastroCliente() {
 
     return (
         <>
-        <Box>
 
             <Navbar />
 
@@ -51,24 +50,25 @@ function CadastroCliente() {
                 <Text mt='25px' className='montserrat800' fontSize={'25px'}>CADASTRE-SE</Text>
                 <Text className='montserrat500' fontSize={'21px'}>Conheça novos artistas e compre artes incríveis!</Text>
             </Flex>
-            <FormControl mt='40px' isRequired className="formulario">
+            
+            <Flex flexDirection='column' alignItems='center'>
+            <FormControl mt='40px' width='50%' isRequired>
 
                 <FormLabel>Nome</FormLabel>
-                <Input border='solid 2px black' width='60%' placeholder='Nome' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
+                <Input border='solid 2px black' placeholder='Nome' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
 
                 <FormLabel pt='1%'>Sobrenome</FormLabel>
-                <Input border='solid 2px black' width='60%' placeholder='Sobrenome' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
+                <Input border='solid 2px black' placeholder='Sobrenome' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
 
                 <FormLabel pt='1%'> Email </FormLabel>
-                <Input border='solid 2px black' width='60%' type="email" placeholder='Email' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
+                <Input border='solid 2px black' type="email" placeholder='Email' _hover={{ borderColor: "#6600CC" }} focusBorderColor={"#6600CC"} />
 
                 <FormLabel pt='1%'>Senha:</FormLabel>
-                <InputGroup width='fit-content'>
+                <InputGroup>
                     <Input
                         border='solid 2px black'
                         type={show ? "text" : "password"}
                         onChange={handlePassword}
-                        w='695px'
                         placeholder="Digite a senha"
                         _hover={{ borderColor: "#6600CC" }}
                         focusBorderColor={"#6600CC"} />
@@ -86,11 +86,10 @@ function CadastroCliente() {
 
                 {passwordValid ? <Text>✔</Text> : <Text>Mínimo de 8 caracteres</Text>}
 
-                <FormLabel paddingTop={4}>Confirmar Senha:</FormLabel>
-                <InputGroup w='fit-content'>
+                <FormLabel>Confirmar Senha:</FormLabel>
+                <InputGroup>
                     <Input
                         border="2px"
-                        w='695px'
                         type={show ? "text" : "password"}
                         placeholder="Confirme a senha"
                         isInvalid={confirmPassword}
@@ -111,13 +110,13 @@ function CadastroCliente() {
 
                 {confirmPassword ? <Text>Senha não esta igual.</Text> : <Text>✔</Text>}
 
-                <Checkbox pl='8%' pt='3%' mb='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
-
             </FormControl>
-            <Button marginLeft='650px' width='357px' h='67px' marginBottom='3%' backgroundColor='#F0F000' _hover='none' border='solid 2px black' fontSize='25px'>
+            <Checkbox pt='3%' mb='3%'>Li e concordo com os Termos e Condições da Plataforma. </Checkbox>
+
+            <Button width='357px' h='67px' marginBottom='3%' backgroundColor='#F0F000' _hover='none' border='solid 2px black' fontSize='25px'>
                 <Text className='montserrat800'>CRIAR CONTA</Text>
             </Button>
-        </Box>
+            </Flex>
 
     <Footer />
     </>

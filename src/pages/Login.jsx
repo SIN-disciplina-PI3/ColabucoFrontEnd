@@ -1,4 +1,4 @@
-import { Text, Button, Input, InputGroup, InputRightElement, Stack } from '@chakra-ui/react';
+import { Text, Button, Input, InputGroup, InputRightElement, Stack, Flex } from '@chakra-ui/react';
 import styles from '../styles/login.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -44,9 +44,11 @@ function Login() {
 
             </InputGroup>
 
-            <Text className='fonte01' >Não possui conta?
-                <Link className='texto03' to='/cadastrocliente'> Cadastre-se </Link>
-            </Text>
+            <Flex direction={'row'} gap='6px'>
+
+            <Text className='fonte01'>Não possui conta?</Text>
+            <Link className='texto03' to='/cadastrocliente'>Cadastre-se </Link>
+            </Flex>
 
             <Button className='fonte02' _hover='none' backgroundColor='#6600CC' color='white'> Entrar </Button>
         </Stack>
