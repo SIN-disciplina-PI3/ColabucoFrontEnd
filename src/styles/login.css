@@ -35,11 +35,12 @@
 }
 
 .texto2{
-    
     align-self: self-start;
     padding-left: 35.5%;
 }
 
 .texto03{
-    text-decoration:solid;
+    color: #6600CC;
+    text-decoration:underline;
+    font-weight: 700;
 }

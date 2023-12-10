@@ -1,17 +1,16 @@
 import '../styles/home.css';
 import Navbar from '../components/Navbar';
-import Carousel from '../components/Carousel';
-import ShippingInformations from '../components/ShippingInformations';
-import Offers from '../components/Offers';
-import FeaturedArtists from '../components/FeaturedArtists';
+import Carousel from '../components/home/Carousel';
+import ShippingInformations from '../components/home/ShippingInformations';
+import Offers from '../components/home/Offers';
+import FeaturedArtists from '../components/home/FeaturedArtists';
 import { Center, Box } from '@chakra-ui/react';
-import TopSelling from '../components/TopSelling';
-import Categories from '../components/Categories';
-import BuyByArtist from '../components/BuyByArtist';
+import TopSelling from '../components/home/TopSelling';
+import Categories from '../components/home/Categories';
+import BuyByArtist from '../components/home/BuyByArtist';
 import Footer from '../components/Footer';
 
-
-function VisualArtsCategory() {
+function Home() {
   return (
     <Box className="content">
       <Navbar />
@@ -28,10 +27,9 @@ function VisualArtsCategory() {
         <Categories />
         <BuyByArtist />
       </Box>
-
       <Footer />
     </Box>
   );
 }
 
-export default VisualArtsCategory;
+export default Home;

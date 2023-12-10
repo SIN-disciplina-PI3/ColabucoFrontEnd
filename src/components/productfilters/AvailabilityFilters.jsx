@@ -1,6 +1,5 @@
 import { Button, Stack, Box } from "@chakra-ui/react";
 import { useState } from "react";
-import '../styles/home.css';
 
 function AvailabilityFilters() {
     const [buttonStyles, setButtonStyles] = useState({

@@ -1,8 +1,8 @@
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 import { Box, Image, Center, Text } from '@chakra-ui/react';
-import IconMusic from '../assets/cd.png';
-import IconCinema from '../assets/film-reel.png';
-import IconLiterature from '../assets/open-book.png';
+import IconMusic from '../../assets/cd.png';
+import IconCinema from '../../assets/film-reel.png';
+import IconLiterature from '../../assets/open-book.png';
 
 function Categories() {
     return (
