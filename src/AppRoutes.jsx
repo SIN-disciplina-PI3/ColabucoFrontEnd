@@ -9,6 +9,7 @@ import NewProductPopUp from "./pages/NewProductPopUp";
 import AboutColabuco from "./pages/AboutColabuco";
 import ArtistProfile from "./pages/ArtistProfile";
 import ClientProfile from "./pages/ClientProfile";
+import AllArtists from "./pages/AllArtists";
 
 function AppRoutes(){
     return(
@@ -23,6 +24,7 @@ function AppRoutes(){
             <Route path="newproduct" element={<NewProductPopUp />} />
             <Route path="perfilartista" element={<ArtistProfile/>}></Route>
             <Route path="perfilcliente" element={<ClientProfile/>}></Route>
+            <Route path="todosartistas" element={<AllArtists/>}></Route>
         </Routes>
     );
 }

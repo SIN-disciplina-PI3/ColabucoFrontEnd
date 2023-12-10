@@ -68,7 +68,7 @@ function Navbar() {
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="/" className='fonte2 categoria'>INÍCIO</Link>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="productscreen" className='fonte2 categoria'>PRODUTOS</Link>
-                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="" className='fonte2 categoria'>ARTISTAS</Link>
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="todosartistas" className='fonte2 categoria'>ARTISTAS</Link>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="sobrecolabuco" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
             </HStack>
         </Box>
