@@ -1,7 +1,6 @@
-import React from 'react'
-import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal, Drawer, useDisclosure } from '@chakra-ui/react';
+import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
-import { FiSun, FiMoon, FiUser } from "react-icons/fi";
+import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
 
 import {
     Popover,
@@ -11,13 +10,11 @@ import {
     PopoverArrow,
 } from '@chakra-ui/react'
 import Login from '../pages/Login';
-import ShoppingCart from './ShoppingCart';
 
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = React.useRef()
+
     return (
         <Box >
             <HStack borderBottom='solid 3px black'
@@ -47,7 +44,10 @@ function Navbar() {
                         </Portal>
                     </Popover>
 
-                    <ShoppingCart></ShoppingCart>
+
+                    <Link size='lg' href='/carrinho'>
+                        <Icon as={FiShoppingBag} w={8} h={8} />
+                    </Link>
 
                     <IconButton
                         icon={colorMode === "light" ? <FiSun /> : <FiMoon />}
@@ -67,7 +67,7 @@ function Navbar() {
             </HStack>
             <HStack bg="#FFFF00" padding='0  100px' justify='center' spacing='5px' gap='0'>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="/" className='fonte2 categoria'>INÍCIO</Link>
-                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="productscreen" className='fonte2 categoria'>PRODUTOS</Link>
+                <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="todosprodutos" className='fonte2 categoria'>PRODUTOS</Link>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="todosartistas" className='fonte2 categoria'>ARTISTAS</Link>
                 <Link borderBottom='solid 3px transparent' style={{ textDecoration: 'none' }} href="sobrecolabuco" className='fonte2 categoria'>SOBRE A COLABUCO</Link>
             </HStack>

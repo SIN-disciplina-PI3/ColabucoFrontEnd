@@ -8,17 +8,9 @@
     *{flex-direction: column;}
 }
 
-.borda, Input{
+.borda{
     border-radius: 8px;
     border: solid black 3px;
-}
-
-.spacingy > *{
-    margin-bottom: 16px;
-}
-
-.fw7{
-    font-weight: 700;
 }
 
 .content {
@@ -27,12 +19,12 @@
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
+}
   
 ::-webkit-scrollbar-thumb {
     background: #C1C0C0;
-  }
+}
   
 ::-webkit-scrollbar-thumb:hover {
     background: #9e9e9e;
-  }
+}
