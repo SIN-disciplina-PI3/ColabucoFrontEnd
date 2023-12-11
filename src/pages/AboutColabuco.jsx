@@ -7,7 +7,7 @@ function AboutColabuco() {
     return (
         <>
             <Navbar></Navbar>
-            <Center className="fw7" border='solid 3px black' h={'105.01px'} bgColor={'#6600CC'} color={'white'} fontSize={'25px'}>SOBRE A COLABUCO</Center>
+            <Center className="montserrat800" border='solid 3px black' h={'105.01px'} bgColor={'#6600CC'} color={'white'} fontSize={'25px'}>SOBRE A COLABUCO</Center>
             <Center mt='40px'>
                 <Image src={aboutcolabuco}></Image>
             </Center>
