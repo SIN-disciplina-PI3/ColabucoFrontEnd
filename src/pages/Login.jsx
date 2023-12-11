@@ -4,14 +4,14 @@ import React from 'react';
 import '../styles/home.css';
 
 
-function Login() {
+function Login(props) {
 
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
 
     return (
 
-    <Box>
+    <Box className={props.className}>
         <Flex direction='row' justifyContent='center' alignItems='center' className='navBar'>   
                 <Text>L O G I N </Text>
         </Flex>

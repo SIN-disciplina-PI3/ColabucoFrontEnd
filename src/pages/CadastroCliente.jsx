@@ -42,8 +42,8 @@ function CadastroCliente() {
     }
 
     return (
-        <Box>
-            <Navbar />
+        <Box className='content'>
+            <Navbar className='content'/>
 
             <Flex flexDirection='column' border='black 3px solid' h={'131px'} bgColor={'#6600CC'} color={'white'} textAlign='center' >
                 <Text mt='25px' className='montserrat800' fontSize={'25px'}>CADASTRE-SE</Text>

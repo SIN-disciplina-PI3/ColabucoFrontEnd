@@ -8,8 +8,8 @@ import "../styles/global-styles.css";
 
 function ArtistProfile() {
   return (
-    <Box>
-      <Navbar />
+    <Box className='content'>
+      <Navbar className='content'/>
       <Center
         className="fw7 borda"
         h={"105.01px"}

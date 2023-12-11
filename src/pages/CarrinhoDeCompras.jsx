@@ -12,8 +12,8 @@ import styles from '../styles/CarrinhoDeCompras.css'
 function CarrinhoDeCompras() {
 
     return (
-        <Box >
-            <Navbar />
+        <Box className='content'>
+            <Navbar className='content'/>
             <Center border='black 3px solid' h={'144px'} bgColor={'#6600CC'} color={'white'}>
                 <Text className='montserrat800' fontSize={'25px'}>FINALIZAÇÃO DE COMPRA</Text>
             </Center>

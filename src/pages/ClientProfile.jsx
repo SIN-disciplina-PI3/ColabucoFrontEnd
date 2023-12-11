@@ -35,8 +35,8 @@ function ClientProfile(){
     }
 
     return(
-        <Box>
-            <Navbar/>
+        <Box className='content'>
+            <Navbar className='content'/>
             <Center className="fw7 borda" h={'105.01px'} bgColor={'#6600CC'} color={'white'} fontSize={'25px'}>PERFIL</Center>
             <Stack w={'100%'} p={'30px 92px'}>
                 <ProfileInformations/>

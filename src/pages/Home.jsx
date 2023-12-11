@@ -12,8 +12,8 @@ import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <Box className="content">
-      <Navbar />
+    <Box className="content" textAlign={'center'}>
+      <Navbar className='content'/>
       <Carousel />
       <ShippingInformations />
 

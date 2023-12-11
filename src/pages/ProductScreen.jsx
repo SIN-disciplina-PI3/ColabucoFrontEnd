@@ -11,8 +11,8 @@ import Footer from "../components/Footer"
 function ProductScreen() {
     return (
         <>
-
-        <Navbar></Navbar>
+        <Box className='content'>
+        <Navbar className='content'></Navbar>
        
             <Flex>
                 <ProductImage pt='64px' pl='171px' border='4px' borderRadius='8px' src='https://i.discogs.com/yGmG6qztvTovGqYvQOefrsdlW5dLTIHdyrQVw2PgUfk/rs:fit/g:sm/q:90/h:554/w:554/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY1MzY4/NTYtMTU3MjU0OTEx/OS02NjQzLmpwZWc.jpeg'/>
@@ -30,7 +30,7 @@ function ProductScreen() {
                 </Box>
             </Flex>
         <Footer />
-
+        </Box>
         </>
     )
 }

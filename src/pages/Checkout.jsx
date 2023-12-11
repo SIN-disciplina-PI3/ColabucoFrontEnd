@@ -5,8 +5,8 @@ import Footer from "../components/Footer";
 
 function Checkout(){
     return(
-        <Box>
-            <Navbar></Navbar>
+        <Box className='content'>
+            <Navbar className='content'></Navbar>
             <Center border='black 3px solid' h={'144px'} bgColor={'#6600CC'} color={'white'}>
                 <Text className='montserrat800' fontSize={'25px'}>FINALIZAÇÃO DE COMPRA</Text>
             </Center>

@@ -1,14 +1,15 @@
 import allproducts from '../assets/allproducts.svg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Center, Image, Flex } from '@chakra-ui/react'; 
+import { Box, Center, Image, Flex } from '@chakra-ui/react'; 
 import CardProduct from '../components/CardProduct';
 import ProductFilters from '../components/ProductFilters';
 
 function AllProducts(){
     return(
         <>
-        <Navbar />
+        <Box className='content'>
+        <Navbar className='content'/>
         
         <Flex alignItems={'center'}>
             <ProductFilters bottom='3.5rem'></ProductFilters>
@@ -35,7 +36,8 @@ function AllProducts(){
             <CardProduct src='https://i1.sndcdn.com/artworks-XGGWMQzUrHbzRT1h-z7jChw-t500x500.jpg' title='3 par de meia' currentPrice={5}/>
             <CardProduct src='https://pm1.aminoapps.com/7956/c1871916403f831b4956fa484bee1fad67974bdar1-1080-1314v2_uhq.jpg' title='Rei Chikita'currentPrice={1000}/>
         </Center>
-        <Footer />   
+        <Footer /> 
+        </Box>  
         </>
     )
 }

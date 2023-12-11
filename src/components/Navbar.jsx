@@ -12,7 +12,7 @@ import {
 import Login from '../pages/Login';
 
 
-function Navbar() {
+function Navbar(props) {
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
@@ -35,7 +35,7 @@ function Navbar() {
                             </Link>
                         </PopoverTrigger>
                         <Portal>
-                        <PopoverContent w='45rem' h='30rem'>
+                        <PopoverContent className={props.className} mr='100px' w='45rem' h='30rem'>
                         <PopoverArrow />
                         <PopoverBody>
                             <Login></Login>
