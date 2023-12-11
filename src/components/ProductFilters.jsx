@@ -9,7 +9,6 @@ import SliderFilter from './productfilters/SliderFilter';
 import AvailabilityFilters from './productfilters/AvailabilityFilters';
 import ButtonOffers from './productfilters/ButtonOffers';
 
-
 function ProductFilters(props) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()

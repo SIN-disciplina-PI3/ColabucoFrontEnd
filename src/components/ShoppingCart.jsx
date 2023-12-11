@@ -4,8 +4,6 @@ import close from '../assets/close.svg'
 import { FiShoppingBag } from "react-icons/fi";
 import CardProductCart from './CardProductCart';
 
-
-
 function ShoppingCart() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()

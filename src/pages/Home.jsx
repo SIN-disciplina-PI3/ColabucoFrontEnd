@@ -17,7 +17,7 @@ function Home() {
       <Carousel />
       <ShippingInformations />
 
-      <Box w='100%' px='12%'>
+      <Box w='100%' px='12%' >
         <Offers />
         <Center>
           <FeaturedArtists />
