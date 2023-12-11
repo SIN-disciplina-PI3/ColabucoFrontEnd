@@ -81,6 +81,29 @@ function CadastroCliente() {
                             {passwordValid ? <Text>✔</Text> : <Text>Mínimo de 8 caracteres</Text>}
                         </Box>
 
+                <FormLabel>Confirmar Senha:</FormLabel>
+                <InputGroup>
+                    <Input
+                        border="2px"
+                        type={show ? "text" : "password"}
+                        placeholder="Confirme a senha"
+                        isInvalid={confirmPassword}
+                        onChange={handlePasswordCheck}
+                        _hover={{ borderColor: "#6600CC" }}
+                        focusBorderColor={"#6600CC"} />
+                    <InputRightElement width="8rem">
+                        <Button
+                            h="1.75rem"
+                            size="md"
+                            color="white"
+                            bg={"#6600CC"}
+                            onClick={handleClickPassword}>      
+                            {show ? "Esconder" : "Mostrar"}
+                        </Button>
+                    </InputRightElement>
+                </InputGroup>
+
+                {confirmPassword ? <Text>Senha não está igual.</Text> : <Text>✔</Text>}
                         <Box>
                             <FormLabel>Confirmar Senha:</FormLabel>
                             <InputGroup>
