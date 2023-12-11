@@ -1,4 +1,4 @@
-import { Box, Center, useColorModeValue, Heading, Text, Stack, Image } from '@chakra-ui/react';
+import { Box, Center, useColorModeValue, Heading, Text, Stack, Link } from '@chakra-ui/react';
 import ProductImage from './product/ProductImage';
 
 const IMAGE =
@@ -10,6 +10,7 @@ function CardProduct(props) {
   const formatCurrentPrice = currentPrice ? ` R$ ${currentPrice.toFixed(2)}` : 'R$ 0.00'
   return (
     <Center pt={5} px={4}>
+      <Link href='produto'>
       <Box
         role={'group'}
         p={6}
@@ -21,7 +22,7 @@ function CardProduct(props) {
         rounded={'lg'}
         pos={'relative'}
         border='solid 3px black'
-      >
+        >
         {/* <Box
           rounded={'lg'}
           w='200px'
@@ -33,7 +34,7 @@ function CardProduct(props) {
           }}
           border='solid 3px black'
           bg='rgba(0, 0, 0, 0.15)'
-        >
+          >
           <Image boxSize='fit-content' fallbackSrc='https://via.placeholder.com/500'></Image>
         </Box> */}
         <Box h='15rem'>
@@ -54,6 +55,7 @@ function CardProduct(props) {
           </Stack>
         </Stack>
       </Box>
+    </Link>
     </Center>
   );
 }

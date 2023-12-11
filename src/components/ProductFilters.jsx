@@ -10,13 +10,13 @@ import AvailabilityFilters from './productfilters/AvailabilityFilters';
 import ButtonOffers from './productfilters/ButtonOffers';
 
 
-function ProductFilters() {
+function ProductFilters(props) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
 
   return (
     <>
-      <Button top='52rem' left='3.7rem' position='absolute' ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
+      <Button left={props.left} bottom={props.bottom} ref={btnRef} colorScheme='#FFFEEF' onClick={onOpen}>
         <Image src={sandwich}></Image>
       </Button>
       <Drawer
