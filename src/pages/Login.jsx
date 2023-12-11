@@ -1,7 +1,6 @@
-import { Text, Button, Input, InputGroup, InputRightElement, Stack, Flex, CloseButton, Box} from '@chakra-ui/react';
+import { Text, Button, Input, InputGroup, InputRightElement, Stack, Flex, CloseButton, Box, Link} from '@chakra-ui/react';
 import styles from '../styles/login.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/home.css';
 
 
@@ -45,7 +44,9 @@ function Login() {
             </Flex>
         </Stack>
         <Flex mt='2.5rem' direction={'column'} alignItems={'center'}>
-            <Button w='11rem' h='4rem'_hover='none' backgroundColor='#6600CC' color='white' border='solid 3px black'> ENTRAR </Button>
+            <Button w='11rem' h='4rem'_hover='none' backgroundColor='#6600CC' color='white' border='solid 3px black'>
+                <Link href='perfilcliente'>ENTRAR</Link>
+            </Button>
         </Flex>
     </Box>
     );

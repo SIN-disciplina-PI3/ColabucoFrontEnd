@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Button, Input, FormControl, FormLabel, Checkbox, Flex, Box, Text, InputRightElement, InputGroup, Stack, Center } from "@chakra-ui/react";
+import { Button, Input, FormControl, FormLabel, Checkbox, Flex, Box, Text, InputRightElement, Link, InputGroup, Stack, Center } from "@chakra-ui/react";
 import { useState } from "react";
 
 import './../styles/cadastrocliente.css'
@@ -123,7 +123,7 @@ function CadastroCliente() {
                     </Center>
                     <Center>
                         <Button width='357px' h='67px' marginBottom='3%' backgroundColor='#F0F000' _hover='none' border='solid 2px black' fontSize='25px'>
-                            <Text className='montserrat800'>CRIAR CONTA</Text>
+                            <Link href="/" className='montserrat800'>CRIAR CONTA</Link>
                         </Button>
                     </Center>
                 </FormControl>

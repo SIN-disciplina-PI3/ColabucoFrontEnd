@@ -1,5 +1,5 @@
 import { Box, Text, Button, Input, Center, Grid, Stack,
-    FormControl, FormLabel, FormErrorMessage, FormHelperText, Select, Textarea 
+    FormControl, FormLabel, FormErrorMessage, FormHelperText, Select, Textarea, CloseButton
 } from '@chakra-ui/react';
 import '../styles/global-styles.css';
 
@@ -9,6 +9,9 @@ function NewProduct({onClose}){
 
             <Box w={'1097px'} bgColor={'white'} zIndex={1} fontWeight={'700'}>
                 <Center fontSize={'32px'} bgColor={'#FFFF00'} border={'solid black 3px'} h={'144px'}>
+                <Box position={'absolute'} left={'93%'}>
+                    <CloseButton onClick={onClose}/>
+                </Box>
                     <Text>NOVO PRODUTO</Text>
                 </Center>
                 <FormControl p={'45px 70px'} isRequired>
