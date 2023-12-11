@@ -12,8 +12,7 @@ function Login() {
 
     return (
 
-    <>
-        
+    <Box>
         <Flex direction='row' justifyContent='center' alignItems='center' className='navBar'>   
                 <Text>L O G I N </Text>
         </Flex>
@@ -48,7 +47,7 @@ function Login() {
         <Flex mt='2.5rem' direction={'column'} alignItems={'center'}>
             <Button w='11rem' h='4rem'_hover='none' backgroundColor='#6600CC' color='white' border='solid 3px black'> ENTRAR </Button>
         </Flex>
-        </>
+    </Box>
     );
 
 }
