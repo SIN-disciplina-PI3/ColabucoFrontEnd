@@ -55,25 +55,25 @@ function CadastroCliente() {
                     <Stack gap={'20px'}>
                         <Box>
                             <FormLabel>Nome</FormLabel>
-                            <Input placeholder='Nome'  focusBorderColor={"#6600CC"} border='solid 2px black'/>
+                            <Input placeholder='Nome'  focusBorderColor={"#6600CC"} _hover={{ borderColor: "#6600CC" }} border='solid 2px black'/>
                         </Box>
 
                         <Box>
                             <FormLabel>Sobrenome</FormLabel>
-                            <Input placeholder='Sobrenome'  focusBorderColor={"#6600CC"} border='solid 2px black'/>
+                            <Input placeholder='Sobrenome'  focusBorderColor={"#6600CC"} _hover={{ borderColor: "#6600CC" }} border='solid 2px black'/>
                         </Box>
 
                         <Box>
                             <FormLabel>Email</FormLabel>
-                            <Input type="email" placeholder='Email' focusBorderColor={"#6600CC"} border='solid 2px black'/>
+                            <Input type="email" placeholder='Email' focusBorderColor={"#6600CC"} _hover={{ borderColor: "#6600CC" }} border='solid 2px black'/>
                         </Box>
 
                         <Box>
                             <FormLabel>Senha:</FormLabel>
                             <InputGroup>
-                                <Input type={show ? "text" : "password"} onChange={handlePassword} placeholder="Digite a senha" focusBorderColor={"#6600CC"} border='solid 2px black'/>
+                                <Input type={show ? "text" : "password"} onChange={handlePassword} _hover={{ borderColor: "#6600CC" }} placeholder="Digite a senha" focusBorderColor={"#6600CC"} border='solid 2px black'/>
                                 <InputRightElement width="8rem">
-                                    <Button h="1.75rem" size="md" color="white" bg={"#6600CC"} onClick={handleClickPassword}>
+                                    <Button h="1.75rem" size="md" color="white" bg={"#6600CC"}  onClick={handleClickPassword}>
                                         {show ? "Esconder" : "Mostrar"}
                                     </Button>
                                 </InputRightElement>
@@ -81,33 +81,10 @@ function CadastroCliente() {
                             {passwordValid ? <Text>✔</Text> : <Text>Mínimo de 8 caracteres</Text>}
                         </Box>
 
-                <FormLabel>Confirmar Senha:</FormLabel>
-                <InputGroup>
-                    <Input
-                        border="2px"
-                        type={show ? "text" : "password"}
-                        placeholder="Confirme a senha"
-                        isInvalid={confirmPassword}
-                        onChange={handlePasswordCheck}
-                        _hover={{ borderColor: "#6600CC" }}
-                        focusBorderColor={"#6600CC"} />
-                    <InputRightElement width="8rem">
-                        <Button
-                            h="1.75rem"
-                            size="md"
-                            color="white"
-                            bg={"#6600CC"}
-                            onClick={handleClickPassword}>      
-                            {show ? "Esconder" : "Mostrar"}
-                        </Button>
-                    </InputRightElement>
-                </InputGroup>
-
-                {confirmPassword ? <Text>Senha não está igual.</Text> : <Text>✔</Text>}
                         <Box>
                             <FormLabel>Confirmar Senha:</FormLabel>
                             <InputGroup>
-                                <Input type={show ? "text" : "password"} placeholder="Confirme a senha" isInvalid={confirmPassword} onChange={handlePasswordCheck} focusBorderColor={"#6600CC"} />
+                                <Input type={show ? "text" : "password"} placeholder="Confirme a senha" _hover={{ borderColor: "#6600CC" }} isInvalid={confirmPassword} onChange={handlePasswordCheck} focusBorderColor={"#6600CC"}  border='solid 2px black' />
                                 <InputRightElement width="8rem">
                                     <Button h="1.75rem" size="md" color="white" bg={"#6600CC"} onClick={handleClickPassword}>      
                                         {show ? "Esconder" : "Mostrar"}
