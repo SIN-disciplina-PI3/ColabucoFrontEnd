@@ -1,7 +1,7 @@
 import allproducts from '../assets/allproducts.svg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Center, Image } from '@chakra-ui/react'; 
+import { Center, Image, Flex } from '@chakra-ui/react'; 
 import CardProduct from '../components/CardProduct';
 import ProductFilters from '../components/ProductFilters';
 
@@ -10,10 +10,10 @@ function AllProducts(){
         <>
         <Navbar />
         
-        <Center>
-        <ProductFilters left='-16.5rem' bottom='3.5rem'></ProductFilters>
-            <Image mt='48px'src={allproducts}></Image>
-        </Center>
+        <Flex alignItems={'center'}>
+            <ProductFilters bottom='3.5rem'></ProductFilters>
+            <Image mx='18rem' mt='48px' src={allproducts}></Image>
+        </Flex>
         <Center mt='60px'>
             <CardProduct src='https://img.elo7.com.br/product/main/406A1E0/ednaldo-pereira-de-biscuit-presente.jpg' title='Ednaldinho Pereira' currentPrice={90} initialPrice={300}/>
             <CardProduct src='https://i1.sndcdn.com/artworks-BE72T6QuR7IYqIYr-XHJymA-t500x500.jpg' title='Gato Banano' currentPrice={20} initialPrice={60}/>

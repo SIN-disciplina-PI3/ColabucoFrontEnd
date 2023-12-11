@@ -38,7 +38,7 @@ function CardProduct(props) {
           <Image boxSize='fit-content' fallbackSrc='https://via.placeholder.com/500'></Image>
         </Box> */}
         <Box h='15rem'>
-          <ProductImage src={props.src}borderRadius='lg' boxSize='15rem' border='solid 3px black'></ProductImage>
+          <ProductImage src={props.src} borderRadius='lg' boxSize='15rem' border='solid 3px black'></ProductImage>
         </Box>
 
         <Stack pt={5} align={'center'}>

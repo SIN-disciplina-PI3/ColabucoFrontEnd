@@ -1,7 +1,7 @@
 import { Box, Image, Link, Input, HStack, useColorMode, IconButton, Icon, Text, Portal } from '@chakra-ui/react';
 import logo from '../assets/logo.png';
 import { FiSun, FiMoon, FiUser, FiShoppingBag } from "react-icons/fi";
-
+import ShoppingCart from './ShoppingCart'
 import {
     Popover,
     PopoverTrigger,
@@ -45,9 +45,7 @@ function Navbar() {
                     </Popover>
 
 
-                    <Link size='lg' href='/carrinho'>
-                        <Icon as={FiShoppingBag} w={8} h={8} />
-                    </Link>
+                    <ShoppingCart></ShoppingCart>
 
                     <IconButton
                         icon={colorMode === "light" ? <FiSun /> : <FiMoon />}
