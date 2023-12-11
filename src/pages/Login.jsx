@@ -40,7 +40,7 @@ function Login() {
             <Flex direction={'row'} gap='6px'>
 
             <Text className='fonte01'>Não possui conta?</Text>
-            <Link className='texto03' to='/cadastrocliente'>Cadastre-se </Link>
+            <Link className='texto03' href='cadastrocliente'>Cadastre-se </Link>
             </Flex>
         </Stack>
         <Flex mt='2.5rem' direction={'column'} alignItems={'center'}>
